@@ -1,7 +1,23 @@
-production:
+stages:
+  - build
+  - test
+  - deploy
+
+all:
+  tags:
+    - golang
+    - hugo
+  stage: build
   script:
     - hugo --cacheDir $HOME/cache
+
+production:
+    tags:
+    - golang
+    - hugo
+  stage: deploy
+  script:
     - sudo cp -R public/* /var/www/html/
     - sudo chown -R root:root /var/www/html/
   only:
-    - master
+    - production
