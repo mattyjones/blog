@@ -1,7 +1,7 @@
 ---
 date:        "2014-04-17"
 title:       "Execute Python Commands Over SSH"
-description: "Execute a remote command or script over shh on a single or group or machines using Python"
+# description: "Execute a remote command or script over shh on a single or group or machines using Python"
 tags:        [ "python"]
 topics:      [ "Scripts"]
 slug:        "ssh-script"
