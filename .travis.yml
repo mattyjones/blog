@@ -1,0 +1,11 @@
+language: go
+
+go:
+  - 1.6
+  - 1.7.x
+  - master
+
+install:
+  - go get -v github.com/spf13/hugo
+  - apt-get install python3-pygments
+  - hugo
