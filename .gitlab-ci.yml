@@ -1,5 +1,4 @@
 job:
-  stage: build
   script:
     - hugo --cacheDir $HOME/cache
     - sudo cp public/* /var/www/html/
