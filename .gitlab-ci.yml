@@ -1,5 +1,4 @@
 before_script:
-  - go get -v github.com/spf13/hugo
 
 stages:
   - build
