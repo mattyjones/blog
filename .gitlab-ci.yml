@@ -1,11 +1,24 @@
-stages:
- - deploy
+image: golang:1.7.5
 
-pages:
- stage: deploy
- script:
- - hugo
- - sudo rsync -rv ./public/ /var/www/html/
- - sudo chown root:root /var/www/html/ -R
- only:
- - master
+before_script:
+  - go get -v github.com/spf13/hugo
+
+stages:
+  - build
+  - test
+  - deploy
+
+job1:
+  stage: build
+  script:
+    - hugo
+  only:
+    - master
+
+job1:
+  stage: deploy
+  script:
+    - sudo rsync -rv ./public/ /var/www/html/
+    - sudo chown root:root /var/www/html/ -R
+  only:
+    - master
