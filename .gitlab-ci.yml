@@ -1,7 +1,4 @@
-stages:
-  - build
-
-build_job:
+job:
   stage: build
   script:
     - hugo --cacheDir $HOME/cache
