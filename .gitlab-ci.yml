@@ -1,4 +1,4 @@
-job:
+production:
   script:
     - hugo --cacheDir $HOME/cache
     - sudo cp -R public/* /var/www/html/
@@ -6,7 +6,7 @@ job:
   only:
     - production
 
-job:
+master:
   script:
     - hugo --cacheDir $HOME/cache
   only:
