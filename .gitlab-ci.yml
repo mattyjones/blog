@@ -4,8 +4,4 @@ production:
     - sudo cp -R public/* /var/www/html/
     - sudo chown -R root:root /var/www/html/
   only:
-    - production
-
-master:
-  script:
-    - hugo --cacheDir $HOME/cache
+    - master
