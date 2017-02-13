@@ -6,7 +6,7 @@ stages:
 build_job:
   stage: build
   script:
-    - hugo
+    - hugo --cacheDir /tmp/cache/
   only:
     - master
 
@@ -14,6 +14,6 @@ deploy_job:
   stage: deploy
   script:
     - sudo rsync -rv ./public/ /var/www/html/
-    - sudo chown root:root /var/www/html/ -R
+    - sudo chown -R root:root /var/www/html/
   only:
     - master
