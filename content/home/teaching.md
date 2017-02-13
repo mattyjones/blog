@@ -19,8 +19,9 @@ I enjoy coaching and teaching middle and high school children various topics abo
 - [First Lego League][2], [Norte Dame Academy][1]
 - [Snap Circuits][3], [Norte Dame Academy][1]
 - Intro to Open Source development using Python, [Norte Dame Academy][1]
-
+- [Summer Camp - Technology Week][4], [Norte Dame Academy][1] 
 
 [1]: http://ndatyngsboro.org
 [2]: http://www.firstinspires.org/robotics/fll
 [3]: http://www.snapcircuits.net/
+[4]: http://www.ndatyngsboro.org/activities-camp/tech-camp
