@@ -12,7 +12,7 @@ all:
     - hugo --cacheDir $HOME/cache
 
 production:
-    tags:
+  tags:
     - golang
     - hugo
   stage: deploy
