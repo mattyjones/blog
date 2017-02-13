@@ -5,3 +5,7 @@ production:
     - sudo chown -R root:root /var/www/html/
   only:
     - production
+
+master:
+  script:
+    - hugo --cacheDir $HOME/cache
