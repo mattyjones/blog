@@ -1,7 +1,7 @@
 job:
   script:
     - hugo --cacheDir $HOME/cache
-    - sudo cp public/* /var/www/html/
+    - sudo cp -R public/* /var/www/html/
     - sudo chown -R root:root /var/www/html/
   only:
     - master
