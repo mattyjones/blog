@@ -4,4 +4,4 @@ job:
     - sudo cp -R public/* /var/www/html/
     - sudo chown -R root:root /var/www/html/
   only:
-    - master
+    - production
