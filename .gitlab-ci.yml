@@ -5,3 +5,9 @@ job:
     - sudo chown -R root:root /var/www/html/
   only:
     - production
+
+job:
+  script:
+    - hugo --cacheDir $HOME/cache
+  only:
+    - master
