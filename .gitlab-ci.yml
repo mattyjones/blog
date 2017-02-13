@@ -1,8 +1,19 @@
+stages:
+  - build
+  - test
+  - deploy
+
 build_job:
+  stage: build
   script:
     - hugo --cacheDir $HOME/cache
+  only:
+    - master
 
 deploy_job:
+  stage: deploy
   script:
     - sudo cp ./public/ /var/www/html/
     - sudo chown -R root:root /var/www/html/
+  only:
+    - master
