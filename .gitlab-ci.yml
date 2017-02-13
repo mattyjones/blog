@@ -3,16 +3,17 @@ before_script:
 
 stages:
   - build
+  - test
   - deploy
 
-job1:
+build_job:
   stage: build
   script:
     - hugo
   only:
     - master
 
-job1:
+deploy_job:
   stage: deploy
   script:
     - sudo rsync -rv ./public/ /var/www/html/
