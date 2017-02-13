@@ -5,7 +5,7 @@ stages:
 build_job:
   stage: build
   script:
-    - hugo --cacheDir /tmp/cache/
+    - hugo --cacheDir $HOME/cache
   only:
     - master
 
