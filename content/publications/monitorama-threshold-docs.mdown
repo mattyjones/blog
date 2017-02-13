@@ -1,0 +1,25 @@
++++
+abstract = "Maintaining documentation sucks. There are ways to help automate the documentation of monitoring thresholds though. Using Gitlab/Github, markdown, and some simple shell magic updating the docs surrounding thresholds can be a thing of the past or at the least much less frustrating."
+authors = ["Matt Jones"]
+date = "2015-06-16"
+# image = ""
+# image_preview = ""
+# math = false
+publication = "Monitorama2015"
+# publication_short = "In *ICMEW*"
+# selected = true
+title = "Automated Documentation Of Monitoring Thresholds"
+url_code = "http://mattyjones.github.io/psaro/tree/gh-pages"
+# url_dataset = ""
+# url_pdf = ""
+# url_project = "project/"
+url_slides = "https://mattjones-pres-monitorama2015.herokuapp.com/#/"
+url_video = "https://vimeo.com/131503445"
+
+[[url_custom]]
+name = "Monitorama"
+url = "http://monitorama.com/"
+
++++
+
+Maintaining documentation sucks. There are ways to help automate the documentation of monitoring thresholds though. Using Gitlab/Github, markdown, and some simple shell magic updating the docs surrounding thresholds can be a thing of the past or at the least much less frustrating.

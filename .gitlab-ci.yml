@@ -1,0 +1,11 @@
+stages:
+ - deploy
+
+pages:
+ stage: deploy
+ script:
+ - hugo
+ - sudo rsync -rv ./public/ /var/www/html/
+ - sudo chown root:root /var/www/html/ -R
+ only:
+ - master
