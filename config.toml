@@ -24,16 +24,9 @@ defaultContentLanguageInSubdir = false
 [params]
   name = "Matt Jones"
   role = "Open Source Infrastructure Hacker"
-  # organization = "Yieldbot"
+  # organization = "Salesforce"
   avatar = "me2.png"
-  email = "mattjones@yieldbot.com"
-  # address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-  # office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  # phone = "888 888 88 88"
-  # skype = "echo123"
-
-  # Enable Keybase in Contact section by entering your keybase.io username.
-  keybase = "mattyjones"
+  email = "urlugal@gmail.com"
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
@@ -73,7 +66,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:mattjones@yieldbot.com"
+    link = "mailto:urlugal@gmail.com"
 
   [[params.social]]
     icon = "linkedin"
