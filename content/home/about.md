@@ -25,6 +25,11 @@ weight = 10
   year = "2007 - Present"
 
 [[organizations.orgs]]
+  name = "ACM"
+  position = "Member"
+  year = "2016 - Present"
+
+[[organizations.orgs]]
   name = "Sensu-Plugins"
   position = "Core Contributor"
   year = "2015 - 2016"
