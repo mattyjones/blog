@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rdesktop on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/rdesktop/</link>
+    <description>Recent content in Rdesktop on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Fri, 30 Mar 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/rdesktop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shell Wrapper for RDesktop</title>
+      <link>http://caffeinatedengineering.io/post/rdesktop-shell/</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/rdesktop-shell/</guid>
+      <description>I use Linux/OSX almost exclusively when it comes to system administration, even if the servers themselves are Windows. Sometimes this is not the easiest or best thing to do but many times it is much more efficient and quicker to write a script to do what I need to do, and many times those scripts are easier to write in *nix. It may look like your keyboard threw up on the screen but that one line of sed could save hours over the course of a week.</description>
+    </item>
+    
+  </channel>
+</rss>

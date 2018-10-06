@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.49" />
+  <meta name="author" content="Matt Jones">
+  <meta name="description" content="Open Source Infrastructure Hacker">
+
+  <link rel="stylesheet" href="/css/highlight.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  <link rel="stylesheet" href="http://caffeinatedengineering.iocss/override.css">
+  
+
+  <link rel="alternate" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+  <link rel="feed" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://caffeinatedengineering.io/post/windows-with-bsd/">
+
+  
+
+  <title>Administering Windows Servers with FreeBSD | Caffeinated Engineering</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Caffeinated Engineering</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="nav-item">
+          <a href="/#about">
+            Home
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#posts">
+            Posts
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#projects">
+            Projects
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#talks">
+            Talks
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#teaching">
+            Coaching
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+    
+
+    <h1 itemprop="name">Administering Windows Servers with FreeBSD</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2012-04-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Thu, Apr 12, 2012
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/bsd">BSD</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/windows-server">Windows Server</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fwindows-with-bsd%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Administering%20Windows%20Servers%20with%20FreeBSD&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fwindows-with-bsd%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fwindows-with-bsd%2f&amp;title=Administering%20Windows%20Servers%20with%20FreeBSD"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fwindows-with-bsd%2f&amp;title=Administering%20Windows%20Servers%20with%20FreeBSD"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Administering%20Windows%20Servers%20with%20FreeBSD&amp;body=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fwindows-with-bsd%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <p>FreeBSD, the less talked about cousin to Linux is not only a viable alternative to both Windows and Linux but in some ways is far better than either, it really comes down to personal choice and I am slowly choosing FreeBSD for more and more of my needs. Despite this, installing a graphical desktop on FreeBSD still requires a fair amount of work and some measure of skill.  PC-BSD, FreeBSD with KDE and a graphical installer packaged together alleviates much of the work but for those that don&rsquo;t want or need the baggage that comes with KDE, installing FreeBSD and building what you want is really the best option.</p>
+
+<p>I prefer XFCE as my desktop so I will be detailing my migration to FreeBSD and providing the steps I took to build a complete workstation for administering windows from FreeBSD. I don&rsquo;t actually need XFCE, you could use any window manager but that is what I chose to use.   I only require a few simple tools, a web browser, a RDP client, a text editor, a VPN client, and on occasion access to a window&rsquo;s UNC share.  I started with the <a href="http://www.freebsd.org/where.html" target="_blank">9.0</a> release and installed with all the options, using the entire disk. If you are not familar with installing BSD check out this section of the <a href="http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/bsdinstall.html" target="_blank">handbook</a>. I then configured the networking by hand as I hand as I had specific needs but DHCP should suffice for most people. When asked if I wanted to make any changes prior to reboot I said no and let it reboot.</p>
+
+<p>I logged in as root initially to make some changes to the user account I created and install the necessary software packages. Most Linux distributions by default will allow a user to use su and many will allow a user to shut down the system. BSD by default will not allow these things. To enable a user to shut down and reboot the system using the shutdown command they need to be added to the operator group and to allow them to use su they need to be added to the wheel group.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">pw usermod -G &lt;username&gt; operator, wheel</code></pre></div>
+
+<p>Next I need a desktop. You have two ways of doing this either by compiling from source using ports or by installing pre-built packages. I chose to use the packages to save time and hassle but you could do it either way. If you wish to do it using ports then you will need to update your ports directory to reflect the most current offerings. I use <a href="http://www.freebsd.org/doc/handbook/portsnap.html" target="_blank">portsnap</a> for this but there are other ways. Before you do this, make sure /usr/ports is empty by using the following:</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">cd /usr/ports
+rm -rf *</code></pre></div>
+
+<p>Next you want to fetch the ports tree and install it. This will only need to be done once, from this point on you can just use the update command.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">portsnap fetch
+portsnap install
+portsnap update</code></pre></div>
+
+<p>A nice feature of BSD is that you can combine commands</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">portsnap fetch install
+portsnap fetch update</code></pre></div>
+
+<p>The handbook goes into more details about working with <a href="http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/ports-using.html" target="_blank">ports</a> but sense I am doing this with packages I am not going to talk about them any more then necessary.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">pkg_add -r xfce
+pkg_add -r xdm
+pkg_add -r xorg</code></pre></div>
+
+<p>These will install XFCE and all the dependencies you need. Even though you are installing XFCE and it depends on having a running X Server, you will still need to install it separately and XORG is as good a choice as any.  Xdm is the display manager, you can use kdm or gdm but this just makes sense to me as I am not planning on using either KDE or Gnome.</p>
+
+<p>After that finishes you still need to do a little housekeeping to get this working properly.  These are all the things that Linux will do behind the scenes but you will need to do them manually. You will need to add the next few lines to rc.conf so that they start upon booting.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dbus_enable=&#34;YES&#34;
+hald_enable=&#34;YES&#34;</code></pre></div>
+
+<p>You will then need to create ~/.xinitrc with a text editor for each user with the following</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">exec /usr/local/bin/startxfce4</code></pre></div>
+
+<p>This will tell X that when it starts you want to use XFCE, if this line is omitted you will boot into twm, a very minimal desktop but some people may like it if their system has limited resources.  You start XFCE with</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">startx</code></pre></div>
+
+<p>We now have a basic graphical system but we still need to install other software that many take for granted such as web browsers and email clients. I use gmail for web based mail and I have a windows machine running outlook that I remote into for work but thunderbird is a good mail client and it integrates with outlook nicely if needed. I use the following packages: chromium, xchat, rdesktop, openconnect, and vim.</p>
+
+<p>These can all be installed with the pkg_add -r command. If you would prefer, firefox and thunderbird are available as well. I generally use vim/gvim over vi but that is a personal taste, others may want to use gedit, kate, or joe. It depends on your taste, vi is universal and installed everywhere so I just got used to using it. <a href="http://www.rdesktop.org/" target="_blank">Rdesktop</a> is a simple windows RDP client. I wrote a script to handle interactions with it in a previous post.  <a href="http://www.infradead.org/openconnect/" target="_blank">OpenConnect</a> is an open source client for Cisco&rsquo;s AnyConnect SSL VPN and works well. One piece of note when using openconnect, a stock vpnc script has the ability to overwrite your dns settings in /etc/resolv.conf, you should rewrite the script to not do this but if you are lazy just use</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">chflags schg /etc/resolv.conf</code></pre></div>
+
+<p>to make the file imuttable, this command is the equilvent to chmod +i to remove the flag type</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">chflags noschg /etc/resolv.conf</code></pre></div>
+
+<p>There you have it, a basic Freebsd setup for administering windows machines. There is still more work to be done Part 2 will cover setting up thunderbird for use with outlook, configuring samba to access windows shares, and a few other odds and ends that make my daily life easy and keep windows far away from me.</p>
+
+    </div>
+
+  </article>
+
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://caffeinatedengineering.io/post/rdesktop-shell/"><span
+      aria-hidden="true">&larr;</span> Shell Wrapper for RDesktop</a></li>
+    
+
+    
+    <li class="next"><a href="http://caffeinatedengineering.io/post/latex-with-git/">LaTeX and Git in an Academic Environment <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+  
+
+
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2014-2018 Matt Jones &middot; 
+
+      
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+  </body>
+</html>
+

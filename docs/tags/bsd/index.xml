@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bsd on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/bsd/</link>
+    <description>Recent content in Bsd on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Thu, 12 Apr 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/bsd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Administering Windows Servers with FreeBSD</title>
+      <link>http://caffeinatedengineering.io/post/windows-with-bsd/</link>
+      <pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/windows-with-bsd/</guid>
+      <description>FreeBSD, the less talked about cousin to Linux is not only a viable alternative to both Windows and Linux but in some ways is far better than either, it really comes down to personal choice and I am slowly choosing FreeBSD for more and more of my needs. Despite this, installing a graphical desktop on FreeBSD still requires a fair amount of work and some measure of skill. PC-BSD, FreeBSD with KDE and a graphical installer packaged together alleviates much of the work but for those that don&amp;rsquo;t want or need the baggage that comes with KDE, installing FreeBSD and building what you want is really the best option.</description>
+    </item>
+    
+  </channel>
+</rss>

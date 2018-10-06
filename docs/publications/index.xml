@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/publications/</link>
+    <description>Recent content in Publications on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Tue, 07 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang, Yieldbot, Sensu and Now You!</title>
+      <link>http://caffeinatedengineering.io/publications/yb-golang-sensu-blog/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/yb-golang-sensu-blog/</guid>
+      <description>Network, system and application monitoring have come a long way since the late 1990’s when many of us used simple ping monitors or prohibitively expensive solutions that required an entire team to maintain. As our systems have evolved from rows of racks containing bare metal workhorses to large virtualized environments to now containers and microservices, our monitoring tools and practices have had to evolve as well.</description>
+    </item>
+    
+    <item>
+      <title>How Yieldbot Uses Golang For Monitoring</title>
+      <link>http://caffeinatedengineering.io/publications/golang-monitoring-meetup/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/golang-monitoring-meetup/</guid>
+      <description>See how and why the Yieldbot core infrastructure team is using golang to enhance and extend it&amp;rsquo;s current operational monitoring capabilities across both virtual and container environments.
+Yieldbot is writing fully tested, effective monitors and notification channels in golang that utilize Sensu as a monitoring router but also conform to the 12 Factor App theory to maximize portability across multiple Linux distributions.</description>
+    </item>
+    
+    <item>
+      <title>Hubots - More than meets the eye</title>
+      <link>http://caffeinatedengineering.io/publications/bic-meetup-hubots/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/bic-meetup-hubots/</guid>
+      <description>Hubots are those chat bots that post cat pictures or give you constant updates about your repos. Did you ever wonder how they do that, maybe you want to write one yourself to do something.</description>
+    </item>
+    
+    <item>
+      <title>How Yieldbot Uses Tools &amp; Trust for Better Monitoring</title>
+      <link>http://caffeinatedengineering.io/publications/yb-monitoring-stack-blog/</link>
+      <pubDate>Tue, 29 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/yb-monitoring-stack-blog/</guid>
+      <description>Monitoring. We all know it’s necessary, and yet we constantly battle it. Most of the time, it’s tough to get a consensus on how to implement it most effectively.</description>
+    </item>
+    
+    <item>
+      <title>Automated Documentation Of Monitoring Thresholds</title>
+      <link>http://caffeinatedengineering.io/publications/monitorama-threshold-docs/</link>
+      <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/monitorama-threshold-docs/</guid>
+      <description>Maintaining documentation sucks. There are ways to help automate the documentation of monitoring thresholds though. Using Gitlab/Github, markdown, and some simple shell magic updating the docs surrounding thresholds can be a thing of the past or at the least much less frustrating.</description>
+    </item>
+    
+  </channel>
+</rss>

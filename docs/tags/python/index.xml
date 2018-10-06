@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/python/</link>
+    <description>Recent content in Python on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Thu, 17 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Execute Python Commands Over SSH</title>
+      <link>http://caffeinatedengineering.io/post/ssh-script/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/ssh-script/</guid>
+      <description>This script can be used to execute a single command or a script that is located on a remote machine. The first argument is a text file containing a list of servers that you wish to execute the command on. The next arguments are for the ssh user/password. You can also hard code these into a file to avoid typing them or for allowing you to execute this script automatically. The only dependency is pexpect and this will run in any Python version &amp;gt; 2.</description>
+    </item>
+    
+    <item>
+      <title>Icinga Service Cluster Monitor</title>
+      <link>http://caffeinatedengineering.io/post/cluster-script/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/cluster-script/</guid>
+      <description>When monitoring large scale environments, email noise can be a real concern, as can having a single point of failure. When monitoring services such as ntp where the check is the same on many hosts and has the ability to fail across many or all of them at once, notifications can pile up quickly. Even if this is not a concern, it&amp;rsquo;s simply not necessary to alert on the same failure across all monitored machines.</description>
+    </item>
+    
+    <item>
+      <title>The Plaintext Truth About Password Storage Vulnerabilties</title>
+      <link>http://caffeinatedengineering.io/post/password/</link>
+      <pubDate>Sun, 05 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/password/</guid>
+      <description>It seems every few months a major site has their user database compromised one way or another. Gwaker, LinkedIn, and last.fm among others have been attacked, having their user&amp;rsquo;s login credentials and other data posted online for the world to see. How this happened is an after thought, with near certainty I can say that any information stored on a computer connected to a network will at some point be compromised.</description>
+    </item>
+    
+  </channel>
+</rss>

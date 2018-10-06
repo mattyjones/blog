@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Osx on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/osx/</link>
+    <description>Recent content in Osx on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Sat, 14 Dec 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/osx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing OpenConnect on OSX 10.9 Maverick</title>
+      <link>http://caffeinatedengineering.io/post/openconnect/</link>
+      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/openconnect/</guid>
+      <description>OpenConnect is a great alternative to Cisco&amp;rsquo;s AnyConnect client and is completely cross platform and very easy to setup and configure.
+ Install Macports sudo port install openconnect Install TunTap Install a vpnc-script to ensure proper dns configuration  You can install openconnect from source but the dependency list can be a little scary if you have never done this sort of thing before. Even if you are comfortable building software packages yourself, I wouldn&amp;rsquo;t do it, it is simply not worth the effort on a virgin 10.</description>
+    </item>
+    
+  </channel>
+</rss>

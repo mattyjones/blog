@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.49" />
+  <meta name="author" content="Matt Jones">
+  <meta name="description" content="Open Source Infrastructure Hacker">
+
+  <link rel="stylesheet" href="/css/highlight.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  <link rel="stylesheet" href="http://caffeinatedengineering.iocss/override.css">
+  
+
+  <link rel="alternate" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+  <link rel="feed" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://caffeinatedengineering.io/post/arch-cheatsheet/">
+
+  
+
+  <title>Arch Linux Cheatsheet | Caffeinated Engineering</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Caffeinated Engineering</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="nav-item">
+          <a href="/#about">
+            Home
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#posts">
+            Posts
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#projects">
+            Projects
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#talks">
+            Talks
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#teaching">
+            Coaching
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+    
+
+    <h1 itemprop="name">Arch Linux Cheatsheet</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2013-08-12 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Mon, Aug 12, 2013
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/arch-linux">Arch Linux</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2farch-cheatsheet%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Arch%20Linux%20Cheatsheet&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2farch-cheatsheet%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2farch-cheatsheet%2f&amp;title=Arch%20Linux%20Cheatsheet"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2farch-cheatsheet%2f&amp;title=Arch%20Linux%20Cheatsheet"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Arch%20Linux%20Cheatsheet&amp;body=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2farch-cheatsheet%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>When it comes to administering servers, even Windows servers, Linux is a much better choice in my opinion.  Many of the tools needed come pre-installed and are generally of a higher quality then those developed for Windows.  It may seem counter intuitive and it really depends on what you do on a day to day basis but for those that have a need or a desire, this cheat sheet may help you out.  It is geared around Arch Linux, my preferred distribution, but many of the commands will work with most if not all versions of Linux.</p>
+
+<p>I am not going to go through how to install Arch as the <a href="https://wiki.archlinux.org/index.php/Installation_Guide" target="_blank">documentation</a> for this is already excellent and many people keep it as up to date as possible.  This is merely a partial list of common commands that I find myself using often enough that I wrote them down.  I often keep this list on a flash drive so that when I am standing up new servers I can cut and paste necessary sections rather than have to type them in constantly.</p>
+
+<p>The list is broken up into sections to keep things somewhat neat and to make it easy for me to update it as necessary.  Feel free to make any suggestions for additions to this list.</p>
+
+<h3 id="package-management">PACKAGE MANAGEMENT</h3>
+
+<p>Pacman is the default tool for installing, updating and otherwise managing your Arch Linux installation.  The full documentation can be found <a href="https://wiki.archlinux.org/index.php/Pacman" target="_blank">here</a> but below are the most common commands.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">pacman -S    # install a package
+pacman -Syu  # upgrade the system
+pacman -Rn   # remove a package with and backup configuration files
+pacman -Rsn  # remove a package and all dependencies</code></pre></div>
+
+<h3 id="commonly-installed-packages">Commonly Installed Packages</h3>
+
+<p>These are packages that I use on my workstation.  You may not need all of these or you may need more.  On a high level I use <a href="https://wiki.archlinux.org/index.php/Fluxbox" target="_blank">Fluxbox</a> as my desktop and <a href="https://wiki.archlinux.org/index.php/QEMU" target="_blank">QEMU</a> for all my virtual machines.  A few of the less commonly known programs in the list are <a href="https://wiki.archlinux.org/index.php/SLiM" target="_blank">slim</a>(graphical login manager), <a href="https://wiki.archlinux.org/index.php/Tilda" target="_blank">tilda</a>(used for overlaying a terminal window on the background), and <a href="https://wiki.archlinux.org/index.php/Vifm" target="_blank">vifm</a>(file manager with vi bindings).</p>
+
+<p><strong>X Packages</strong></p>
+
+<ul>
+<li>xorg-server</li>
+<li>xorg-apps</li>
+<li>xorg-message</li>
+<li>xf86-video-noveau</li>
+<li>xlockmore</li>
+<li>xorg-xcalc</li>
+</ul>
+
+<p><strong>Development Packages</strong></p>
+
+<ul>
+<li>base-devel</li>
+<li>tk</li>
+<li>python2</li>
+<li>git</li>
+<li>vim</li>
+<li>texlive-most</li>
+<li>lua</li>
+</ul>
+
+<p><strong>GUI Packages</strong></p>
+
+<ul>
+<li>rxvt</li>
+<li>slim</li>
+<li>fluxbox</li>
+<li>chromium</li>
+<li>feh</li>
+<li>conky</li>
+<li>tilda</li>
+<li>vifm</li>
+<li>xpdf</li>
+</ul>
+
+<p><strong>Virtualization Packages</strong></p>
+
+<ul>
+<li>qemu</li>
+</ul>
+
+<p><strong>System Packages</strong></p>
+
+<ul>
+<li>ntpd</li>
+<li>openssh</li>
+<li>rdesktop<br /></li>
+<li>unzip</li>
+<li>sudo</li>
+</ul>
+
+<p><strong>Office Packages</strong></p>
+
+<ul>
+<li>libreoffice</li>
+<li>libreoffice-en-US</li>
+</ul>
+
+<h3 id="networking">Networking</h3>
+
+<p>Networking has always been a tricky thing to configure. Sometimes it works right out of the box, other times it takes a little tweaking. I have had very good luck with the <a href="https://wiki.archlinux.org/index.php/Network_Configuration" target="_blank">documentation</a> and these commands are generally all that is necessary for the most common setups.</p>
+
+<p><strong>Using DHCP</strong></p>
+
+<p><div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">lspci -v | more             # see what devices are present on the system
+dmesg | grep                # check to see if the module was loaded
+ls /sys/class/net           # get the name assigned to the device
+ip link set up              # enable the device
+ip link show                # check the status of the device
+dhcpcd                      # enable dhcp for the device
+ip addr show                # check the ip address of the device
+systemctl enable dhcpcd     # enable dhcp at startup for the device</code></pre></div>
+<strong>Static IP</strong></p>
+
+<p>Place this into /etc/systemd/system/network.service</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[Unit]
+Description=Wired static IP setup
+Wants=network.target
+Before=network.target
+BindsTo=sys-subsystem-net-devices-.device
+After=sys-subsystem-net-devices-.device
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/ip link set dev  up
+ExecStart=/usr/bin/ip addr add  dev
+ExecStart=/usr/bin/ip route add default via
+
+[Install]
+WantedBy=multi-user.target
+systemctl start network
+systemctl enable network</code></pre></div>
+
+<p>To set the DNS</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">echo &#34;nameserver xxx.xxx.xxx.xxx&#34; &gt;&gt; /etc/resolv.conf</code></pre></div>
+
+<h3 id="x-windows-configuration">X Windows Configuration</h3>
+
+<p>This is a highly subjective section and is tailored towards my needs and wants. Everybody is different but this should give you an idea of where to start or hopefully save you the time of reading through numerous wiki pages to figure out one thing.</p>
+
+<p><strong>Edit the bash profile to use a graphical login manager</strong></p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">cp /etc/skel/.bash_profile ~/                            # default bash profile
+echo &#34;[[ -z $DISPLAY &amp;&amp; $XDG_VTNR -eq 1]]&#34; exec slim     # to start slim on startup</code></pre></div>
+
+<p><strong>Tell slim to start fluxbox upon successful login</strong></p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">touch ~/.xinitrc
+echo &#34;#!/bin/sh&#34; &gt;&gt; ~/.xinitrc
+echo &#34;exec startfluxbox&#34; &gt;&gt; ~/.xinitrc</code></pre></div>
+
+<p><strong>Enable slim</strong></p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">systemctl enable slim.service</code></pre></div>
+
+<p><strong>Set the background</strong></p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">fehbg --bg-scale ~./fluxbox/backgrounds/xxx.jpg/png/etc
+chmod 770 ~/.fehbg</code></pre></div>
+
+<p><strong>Misc stuff</strong></p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">usermod -aG log                       # this will allow the regular user access to the system log files
+cp /etc/conky/conky.conf ~/.conkyrc   # default conky script</code></pre></div>
+
+<p><strong>Fluxbox Configuration</strong></p>
+
+<p>This is again going to depend on what you use and if you even use Fluxbox vs K, Gnome, XFCE,etc. These commands should be added to ~/.fluxbox/startup.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">tilda &amp;                                    # autostart tilda
+conky &amp;                                    # autostart conky
+xrandr --output DVI-I-1 --right-of VGA-1   # dual monitor (change screens as needed)
+sh ~/.fehbg &amp;                              # set the background image</code></pre></div>
+
+<h3 id="tilda-configuration">Tilda Configuration</h3>
+
+<p>This will fill the remainder of the space not used by conky on my left monitor. Under the <em>General</em> tab uncheck <em>Always on top</em>. Under the <em>Appearance</em> tab check <em>Enable Transparency</em> and set <em>Level of Transparency</em> to <strong>100%</strong>.  I tend to use dark backgrounds so under <em>Colors</em> I use <strong>Green on Black</strong> and I disable the scrollbar and set the following values under <em>Appearance</em>.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">height 75%
+width 40%
+x-position 300</code></pre></div>
+
+<h3 id="usb-devices">USB DEVICES</h3>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">dmesg | grep -E &#34;sd[a-z]&#34;         # list all storage devices the system is aware of
+mount -t auto /dev/sd? /mnt/usb   # mount the device
+umount /dev/sd?                   # unmount the device</code></pre></div>
+
+<h3 id="kvm-qemu">KVM/QEMU</h3>
+
+<p>I tend to use QEMU with KVM for managing virtual machines due to unreliability I have experienced with virtual box in general. Most people will never have issues with virtual box and it can be easier to setup configurations using it but I found QEMU to be better and coupled with KVM to be faster and more stable. When enabling usb passthrough the device must be unmounted on the host system.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">gpasswd -a  kvm                                                               # add user to the kvm group
+dd if=/dev/cdrom of=mycdimg.iso                                               # dump the contents of the dvd to the hd for install
+qemu-img create -f qcow2 myimage.qcow2 10G                                    # create a dynamic image(qcow2)
+qemu-img create -f raw myimage.qcow2 10G                                      # create a static image(qcow2)
+qemu-system- -enable-kvm -m 1024 -cdrom xxx.iso -boot d -name xxx xxx.qcow2   # nstall the guest OS
+qemu-system- -enable-kvm -m 1024 xxx.qcow2                                    # this will run the guest OS
+qemu-system- -m 512 -usbdevice host:xxx:xxx xxx.qcow2                         # enable usb pass through
+qemu-img convert -O vdi xxx.qcow2 xxx.vdi                                     # convert the image for use with vbox</code></pre></div>
+
+<h3 id="misc-commands">MISC Commands</h3>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">ntpd -sd                          # sync the time
+systemctl start ntpd              # start ntpd
+systemctl enable ntpd             # start ntpd at boot
+systemctl start sshd              # start ssh daemon
+systemctl enable sshd.service     # start ssh at boot
+
+useradd -m -g [initial_group] -G [additional_groups] -s [login_shell] [username]   # add a normal user account
+passwd [username] [password]                                                       # change the password of a normal account</code></pre></div>
+
+    </div>
+
+  </article>
+
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://caffeinatedengineering.io/post/password/"><span
+      aria-hidden="true">&larr;</span> The Plaintext Truth About Password Storage Vulnerabilties</a></li>
+    
+
+    
+    <li class="next"><a href="http://caffeinatedengineering.io/post/mariadb-with-icinga/">Using MariaDB with Icinga 1x <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+  
+
+
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2014-2018 Matt Jones &middot; 
+
+      
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+  </body>
+</html>
+

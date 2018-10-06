@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Icinga on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/icinga/</link>
+    <description>Recent content in Icinga on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Wed, 07 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/icinga/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitoring Email Storm Mitigation</title>
+      <link>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</guid>
+      <description>No one likes to get flooded with email, most times its just annoying, but it can also mask a real problem. If in those 2000 emails is a single email saying the database was just corrupted, you really don&amp;rsquo;t want to miss it. There are several tools and ways to control email, but unfortunately most MTA&amp;rsquo;s don&amp;rsquo;t have a way to set a threshold over time variable. There is no way to say if N emails go out in N minutes stop sending email.</description>
+    </item>
+    
+    <item>
+      <title>Icinga Service Cluster Monitor</title>
+      <link>http://caffeinatedengineering.io/post/cluster-script/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/cluster-script/</guid>
+      <description>When monitoring large scale environments, email noise can be a real concern, as can having a single point of failure. When monitoring services such as ntp where the check is the same on many hosts and has the ability to fail across many or all of them at once, notifications can pile up quickly. Even if this is not a concern, it&amp;rsquo;s simply not necessary to alert on the same failure across all monitored machines.</description>
+    </item>
+    
+    <item>
+      <title>Using MariaDB with Icinga 1x</title>
+      <link>http://caffeinatedengineering.io/post/mariadb-with-icinga/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/mariadb-with-icinga/</guid>
+      <description>Installing From Scratch When you do an install from scratch and following the icinga documentation for installing IDOUtils the only changes necessary are:
+Add the MariaDB repo to yum, /etc/yum.repos.d/MariaDB.repo. In this case I am using Cent6_64bit and Maria 5.5. For other choices go here.
+# MariaDB 5.5 CentOS repository list - created 2013-10-14 21:01 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/5.5/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1 Now install MariaDB</description>
+    </item>
+    
+  </channel>
+</rss>

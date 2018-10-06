@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mariadb on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/mariadb/</link>
+    <description>Recent content in Mariadb on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Mon, 14 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/mariadb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using MariaDB with Icinga 1x</title>
+      <link>http://caffeinatedengineering.io/post/mariadb-with-icinga/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/mariadb-with-icinga/</guid>
+      <description>Installing From Scratch When you do an install from scratch and following the icinga documentation for installing IDOUtils the only changes necessary are:
+Add the MariaDB repo to yum, /etc/yum.repos.d/MariaDB.repo. In this case I am using Cent6_64bit and Maria 5.5. For other choices go here.
+# MariaDB 5.5 CentOS repository list - created 2013-10-14 21:01 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/5.5/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1 Now install MariaDB</description>
+    </item>
+    
+  </channel>
+</rss>

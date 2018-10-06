@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/home/about/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/home/posts/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/home/projects/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/home/talks/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/home/teaching/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/home/contact/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/drafts/engineering_principles/</loc>
+    <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/drafts/s3_backup/</loc>
+    <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/publications/yb-golang-sensu-blog/</loc>
+    <lastmod>2016-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/publications/golang-monitoring-meetup/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/publications/bic-meetup-hubots/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/notebookops/</loc>
+    <lastmod>2016-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/publications/yb-monitoring-stack-blog/</loc>
+    <lastmod>2015-09-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/publications/monitorama-threshold-docs/</loc>
+    <lastmod>2015-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</loc>
+    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/ssh-script/</loc>
+    <lastmod>2014-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/cluster-script/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/openconnect/</loc>
+    <lastmod>2013-12-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/mariadb-with-icinga/</loc>
+    <lastmod>2013-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/arch-cheatsheet/</loc>
+    <lastmod>2013-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/password/</loc>
+    <lastmod>2013-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/latex-with-git/</loc>
+    <lastmod>2013-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/windows-with-bsd/</loc>
+    <lastmod>2012-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/rdesktop-shell/</loc>
+    <lastmod>2012-03-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/arch-linux/</loc>
+    <lastmod>2013-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/aws/</loc>
+    <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/backups/</loc>
+    <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/bcrypt/</loc>
+    <lastmod>2013-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/bsd/</loc>
+    <lastmod>2012-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/centos/</loc>
+    <lastmod>2013-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/devops/</loc>
+    <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/drafts/</loc>
+    <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/git/</loc>
+    <lastmod>2013-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/glacier/</loc>
+    <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/home/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/icinga/</loc>
+    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/json/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/latex/</loc>
+    <lastmod>2013-04-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/mariadb/</loc>
+    <lastmod>2013-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/monitoring/</loc>
+    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/mremote/</loc>
+    <lastmod>2012-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/notebookops/</loc>
+    <lastmod>2016-02-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/openconnect/</loc>
+    <lastmod>2013-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/osx/</loc>
+    <lastmod>2013-12-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/perl/</loc>
+    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/post/</loc>
+    <lastmod>2016-02-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/publications/</loc>
+    <lastmod>2016-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/python/</loc>
+    <lastmod>2014-04-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/rdesktop/</loc>
+    <lastmod>2012-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/rdp/</loc>
+    <lastmod>2012-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/s3/</loc>
+    <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/scrypt/</loc>
+    <lastmod>2013-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/sec/</loc>
+    <lastmod>2014-05-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/secops/</loc>
+    <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/shell-programming/</loc>
+    <lastmod>2012-03-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/software-engineering/</loc>
+    <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/</loc>
+    <lastmod>2013-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caffeinatedengineering.io/tags/windows-server/</loc>
+    <lastmod>2012-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

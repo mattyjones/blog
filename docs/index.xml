@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caffeinated Engineering on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/</link>
+    <description>Recent content in Caffeinated Engineering on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Engineering Principles</title>
+      <link>http://caffeinatedengineering.io/drafts/engineering_principles/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/drafts/engineering_principles/</guid>
+      <description>
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fail fast and pivot&lt;/li&gt;
+&lt;li&gt;blameless culture&lt;/li&gt;
+&lt;li&gt;move fast slowly&lt;/li&gt;
+&lt;li&gt;trust but verify&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Use Amazon S3 and Glacier As A Remote Backup</title>
+      <link>http://caffeinatedengineering.io/drafts/s3_backup/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/drafts/s3_backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang, Yieldbot, Sensu and Now You!</title>
+      <link>http://caffeinatedengineering.io/publications/yb-golang-sensu-blog/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/yb-golang-sensu-blog/</guid>
+      <description>&lt;p&gt;Network, system and application monitoring have come a long way since the late 1990’s when many of us used simple ping monitors or prohibitively expensive solutions that required an entire team to maintain. As our systems have evolved from rows of racks containing bare metal workhorses to large virtualized environments to now containers and microservices, our monitoring tools and practices have had to evolve as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Yieldbot Uses Golang For Monitoring</title>
+      <link>http://caffeinatedengineering.io/publications/golang-monitoring-meetup/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/golang-monitoring-meetup/</guid>
+      <description>&lt;p&gt;See how and why the Yieldbot core infrastructure team is using golang to enhance and extend it&amp;rsquo;s current operational monitoring capabilities across both virtual and container environments.&lt;/p&gt;
+
+&lt;p&gt;Yieldbot is writing fully tested, effective monitors and notification channels in golang that utilize Sensu as a monitoring router but also conform to the 12 Factor App theory to maximize portability across multiple Linux distributions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hubots - More than meets the eye</title>
+      <link>http://caffeinatedengineering.io/publications/bic-meetup-hubots/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/bic-meetup-hubots/</guid>
+      <description>&lt;p&gt;Hubots are those chat bots that post cat pictures or give you constant updates about your repos. Did you ever wonder how they do that, maybe you want to write one yourself to do something.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NotebookOps or Another Reason Word Processors Are Evil</title>
+      <link>http://caffeinatedengineering.io/post/notebookops/</link>
+      <pubDate>Sun, 21 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/notebookops/</guid>
+      <description>
+
+&lt;h3 id=&#34;hardware-stack&#34;&gt;Hardware Stack&lt;/h3&gt;
+
+&lt;p&gt;Until recently I was unaware of anything resembling NotebookOps. Apparently I am not alone in being obsessively focused on the type, organization, and presentation of my notebook. Right down to the interface I chose to regularly interact with it.&lt;/p&gt;
+
+&lt;p&gt;I have used &lt;em&gt;Mead Composition&lt;/em&gt; notebooks and &lt;em&gt;Pilot Precise&lt;/em&gt; pens for nearly twenty years. They had been working fine all through high school and beyond, I just never felt the need to change, basically I was lazy.&lt;/p&gt;
+
+&lt;p&gt;Waiting for me on my first day at Yieldbot was a new &lt;em&gt;Moleskine&lt;/em&gt; book. I had seen them but had never bothered to try one to see if it could be better. My team lead said he had used them for years and to give it a try. It took me about two days to start wondering where they had been all my life. I now prefer the 8.5x5.5 hardcovers as the best compromise of functionality and durability. This size also melds very well with how I organize my notes and store the book in my backpack but &lt;strong&gt;#bagops&lt;/strong&gt; is a whole other blog post.&lt;/p&gt;
+
+&lt;h3 id=&#34;now-where-did-i-write-that-password&#34;&gt;Now Where Did I Write That Password&lt;/h3&gt;
+
+&lt;p&gt;Organizing notes is a very personal endeavor that many of us obsess over. I have tried several methods and been shown countless other ways, but I always find myself going back to a simple index/tag method. I write the odd page number in the top right of each page, in the top center of the page I write an overall topic for the page, flanking it in the margin on either side, one or two tags. No matter if it only occupies a single line I only use one topic per page. On occasion I won&amp;rsquo;t write something on that topic for a few days, the topic is merely something I want to remember and go back to, for example the title to a blog post I want to research.&lt;/p&gt;
+
+&lt;p&gt;Starting from the back of the book and going in reverse, I have a list of tags, one per line, and then page numbers associated with those tags. This allows me to cross reference topics quickly and easily as a single tag such as ChefSpec might have several topics, but when cross referenced with the documentation tag, I will very quickly find the topic I want.&lt;/p&gt;
+
+&lt;p&gt;This works well as over the years I have organized my thoughts via tags, and I find as I talk to people many times they have as well without thinking about it. The challenge to this is keeping tags at a high enough level that you don&amp;rsquo;t over do it and make a mess of things or spend all day organizing your notes instead of actually working. There is a quote I heard many years ago, most likely from a movie, I paraphrase its lesson here.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;College graduate students spend so much time preparing to write their thesis that when they finally do write it, it should only take them 2 days.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The point is, organizing your notes should be a fast, simple task that comes naturally to you and complements your workflow. It shouldn&amp;rsquo;t be the main focus, taking the notes should be.&lt;/p&gt;
+
+&lt;p&gt;When a book becomes full I label the title page with the dates that the book was used and the outside spine of the book with a number, then put it on a shelf. I take a picture of the tag pages and drop them into a single Evernote note with the title being the dates and the number on the spine. This way my previous notes are somewhat aggregated and fairly searchable from a single location, again tags being the main focus.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-firehose-principle&#34;&gt;The Firehose Principle&lt;/h3&gt;
+
+&lt;p&gt;When it comes to the content of my notebook I put everything in it. That is the beauty of tags, if the page just contains scratch work or random cruft, I tag it as such or assign it no tags. This way it is not indexed but if I search for a scratch tag, I can still find it quickly if I tagged it as such. Using tags also solves the problem of non-contingous thoughts and content.&lt;/p&gt;
+
+&lt;p&gt;I may write a two page blog post, then get sidetracked before finishing it. If I create two tags &lt;em&gt;blog&lt;/em&gt; and &lt;em&gt;foo&lt;/em&gt;, I can easily find a blog post concerning foo, maybe I also have blog posts concerning &lt;em&gt;bar&lt;/em&gt; and &lt;em&gt;bash&lt;/em&gt; that have yet to be written. Either way I now have a simple cross reference for all current and future blog posts I want to write, with initial space already allocated for them.&lt;/p&gt;
+
+&lt;p&gt;For people familiar with git, think of the notebook as the master branch and each topic as a feature branch. If you need to switch to a new topic you just grab the next page and then when you want to return you have a placeholder. The topic allows you to keep track where the tree you are and the tags give you a way to relate different branches.&lt;/p&gt;
+
+&lt;h3 id=&#34;one-pen-to-rule-them-all&#34;&gt;One Pen To Rule Them All&lt;/h3&gt;
+
+&lt;p&gt;One of the only things that can be more contentious than than the notebook or preferred index style is the writing implement you chose to let your thoughts come alive. For general writing I prefer the &lt;em&gt;Pilot Precise .05mm Xtra Fine&lt;/em&gt;. With the moleskin books I find there is little bleeding. While this pen is not as elegant as many inkwell pens, for the lifestyle I tend to lead this pens works well.&lt;/p&gt;
+
+&lt;p&gt;The color is always basic black, I do keep a red pen handy as well but I tend to use it sparingly. Most of the time I use it to mark a page used as a ToDo list as complete(&lt;strong&gt;DONE&lt;/strong&gt;). At times I may transfer the content of an entire page to Evernote, Asana, or other software, in this case I also mark the page as &lt;strong&gt;DONE&lt;/strong&gt;. This simply tells me the content of the page has expired or gone digital. I also use it on occasion to underline a word and mark it with a &lt;strong&gt;TP&lt;/strong&gt;, this signifies that the word itself is a new topic on a further page, I also include the page number for easy locating. This generally comes up as I research something and realize how big it is and I start to break it down into smaller chunks. Using the red ink is a great visual que that allows me to quickly flip through pages and topics.&lt;/p&gt;
+
+&lt;p&gt;I also keep a 0.5mm mechanical pencil handy and use it for drafting and sketching. This helps greatly to cut down on the noise as I may go through several iterations of a single UI design element.&lt;/p&gt;
+
+&lt;h3 id=&#34;so-why-go-through-the-trouble&#34;&gt;So Why Go Through The Trouble&lt;/h3&gt;
+
+&lt;p&gt;Many people ask why I still write in longhand. In fact I am writing the initial draft of this post on pages 82, 86-87 of book 3. The reason is simple, it is an often discussed idea that word processors and digital writing in general have made us less productive. On one hand they have greatly decreased the time it takes to edit a long draft, on the other hand they have made this task too easy and tempting. Using the &amp;ldquo;pen and paper&amp;rdquo; method I find it easier to spew everything I want to say about a given topic into a somewhat cohesive thought. Then when done, I will go back and type everything up and edit it to my hearts content.&lt;/p&gt;
+
+&lt;p&gt;For me this is far more productive and in some way liberating. I am not constrained with neat lines, nor do I concern myself with spacing, punctuation and spelling, that can all come later. Free writing like this allows my thoughts to more organically flow without having to worry about connecting the dots. Many times the topic I thought I was writing about has morphed into something entirely different but equally compelling, and this is why I rely on tags, not topics and the base organizational method.&lt;/p&gt;
+
+&lt;p&gt;No matter how digital my life becomes there is still something wholesome and comforting about picking up a well crafted pen and putting the intangible electrical impulses racing through my mind on to a tangible sheet of paper just as Chaucer, Hemingway, and Tesla have done before me.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Yieldbot Uses Tools &amp; Trust for Better Monitoring</title>
+      <link>http://caffeinatedengineering.io/publications/yb-monitoring-stack-blog/</link>
+      <pubDate>Tue, 29 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/yb-monitoring-stack-blog/</guid>
+      <description>&lt;p&gt;Monitoring. We all know it’s necessary, and yet we constantly battle it. Most of the time, it’s tough to get a consensus on how to implement it most effectively.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automated Documentation Of Monitoring Thresholds</title>
+      <link>http://caffeinatedengineering.io/publications/monitorama-threshold-docs/</link>
+      <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/publications/monitorama-threshold-docs/</guid>
+      <description>&lt;p&gt;Maintaining documentation sucks. There are ways to help automate the documentation of monitoring thresholds though. Using Gitlab/Github, markdown, and some simple shell magic updating the docs surrounding thresholds can be a thing of the past or at the least much less frustrating.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Monitoring Email Storm Mitigation</title>
+      <link>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</guid>
+      <description>&lt;p&gt;No one likes to get flooded with email, most times its just annoying, but it can also mask a real problem.  If in those 2000 emails is a single email saying the database was just corrupted, you really don&amp;rsquo;t want to miss it.  There are several tools and ways to control email, but unfortunately most MTA&amp;rsquo;s don&amp;rsquo;t have a way to set a threshold over time variable.  There is no way to say if N emails go out in N minutes stop sending email.&lt;/p&gt;
+
+&lt;p&gt;This solution is just one of many and focuses mostly on Nagios and Icinga.  Using &lt;a href=&#34;http://simple-evcorr.sourceforge.net/&#34; target=&#34;_blank&#34;&gt;Simple Event Coordinatorr&lt;/a&gt; and the following rule set you can stop an email storm before it gets out of control.  Installing SEC is very simple, most distributions already have it in there repos or you can install it from source, it is a single perl script and man page.  SEC has also been known to work on Windows and OSX as well, I am currently running it on Cent6.4 and Slackware 14.1.&lt;/p&gt;
+
+&lt;p&gt;To get started download the latest version of the rule set from Github &lt;a href=&#34;https://gist.github.com/mattyjones/d68c7768f0e102ac76dd&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; then launch sec with the following command&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;sec -conf=email_throttle.conf -input=/path/to/monitoring/log/file&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You could also use the &amp;lsquo;-detach&amp;rsquo; switch to make it run as a daemon.&lt;/p&gt;
+
+&lt;p&gt;The rule starts by parsing the icinga.log for all notifications, if greater than 25 get sent out over a sliding 60s period the action takes place.  The initial action is to send an email notification out, create a context, then stop sendmail and wait 30s.  It will then open up a second input stream, in this case maillog, you need to start tail with &amp;lsquo;-n 0&amp;rsquo; or else it will trip instantly.&lt;/p&gt;
+
+&lt;p&gt;The second rule parses the maillog to make sure email has indeed been stopped, it looks for a dsn, Delivery Status Notification, of any type to be set out, if it sees one then the second action takes place.  At this point monitoring is stopped on the machine, and a second email is sent out (if possible). Another context is created and we sleep for 30s more.  At this point the final rule sees the context it is looking for has been created and if it sees any more mail it will shutdown the server.&lt;/p&gt;
+
+&lt;p&gt;I am well aware of how shutting down a server is a BAD idea, but without manual intervention and troubleshooting this is the only way to be absolute.  The third rule could always be removed and the window increased to give the technician time to look at the issue first-hand but if that won&amp;rsquo;t be the case, or access to the machine is difficult this last rule will at least stop the follow of email without question.  You could also modify it to create a dump, log some data, etc as well before it powers off.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;type=SingleWithThreshold
+ptype=RegExp
+pattern=dsn=(\d+)\.(\d+)\.(\d+)
+context=maillog_tripped
+desc=$0
+action=shellcmd shutdown -h now 
+window=10
+thresh=2
+
+type=SingleWithThreshold
+ptype=RegExp
+pattern=dsn=(\d+)\.(\d+)\.(\d+)
+context=icingalog_tripped
+desc=$0
+action=pipe &amp;#39;The email threshold was tripped at %t /n Stopping the monitoring services&amp;#39; /bin/mail -s &amp;#34;Email Storm Alert&amp;#34; %e ;  \
+       create mail_tripped_context ; \
+       shellcmd /sbin/service ido2db stop
+       shellcmd /sbin/service icinga stop
+       shellcmd /bin/sleep 30
+window=10
+thresh=2
+
+type=SingleWithThreshold
+ptype=RegExp
+pattern=NOTIFICATION
+desc=$0
+action=eval %e {&amp;#39;email_address&amp;#39;} ;\
+       pipe &amp;#39;The email threshold was tripped at %t /n Stopping the sendmil service&amp;#39; /bin/mail -s &amp;#34;Email Storm Alert&amp;#34; %e ;  \
+       create icingalog_tripped ; \
+       shellcmd /sbin/service sendmail stop ; \
+       shellcmd /bin/sleep 30 ; \
+       spawn /usr/bin/tail -n 0 -f /var/log/maillog ; \
+window=60
+thresh=25&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Execute Python Commands Over SSH</title>
+      <link>http://caffeinatedengineering.io/post/ssh-script/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/ssh-script/</guid>
+      <description>&lt;p&gt;This script can be used to execute a single command or a script that is located on a remote machine.  The first argument is a text file containing a list of servers that you wish to execute the command on.  The next arguments are for the ssh user/password.  You can also hard code these into a file to avoid typing them or for allowing you to execute this script automatically. The only dependency is pexpect and this will run in any Python version &amp;gt; 2.4. The latest version can be found on &lt;a href=&#34;https://gist.github.com/mattyjones/10666342&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;pexpect&lt;/span&gt;
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;sys&lt;/span&gt;
+
+&lt;span style=&#34;color:#228b22&#34;&gt;# the file containing the list of servers to log into&lt;/span&gt;
+input_file = sys.argv[&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;]
+
+&lt;span style=&#34;color:#228b22&#34;&gt;# The login creds&lt;/span&gt;
+user = sys.argv[&lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;] 
+password= sys.argv[&lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;]
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;ssh_command&lt;/span&gt; (user, host, password, command):
+
+  &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;&amp;#34;&amp;#34;This runs a command on the remote host.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt; &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34; I am logging into&amp;#34;&lt;/span&gt;, host
+
+  ssh_newkey = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;Are you sure you want to continue connecting&amp;#39;&lt;/span&gt;
+  child = pexpect.spawn(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;ssh -l &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&lt;/span&gt;%(user, host, command))
+  i = child.expect([pexpect.TIMEOUT, ssh_newkey, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;password: &amp;#39;&lt;/span&gt;])
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; i == &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;: &lt;span style=&#34;color:#228b22&#34;&gt;# Timeout&lt;/span&gt;
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;ERROR!&amp;#39;&lt;/span&gt;)
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;SSH could not login. Here is what SSH said:&amp;#39;&lt;/span&gt;)
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt;(child.before, child.after)
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; None
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; i == &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;: &lt;span style=&#34;color:#228b22&#34;&gt;# SSH does not have the public key. Just accept it.&lt;/span&gt;
+    child.sendline (&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;yes&amp;#39;&lt;/span&gt;)
+    child.expect (&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;password: &amp;#39;&lt;/span&gt;)
+    i = child.expect([pexpect.TIMEOUT, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;password: &amp;#39;&lt;/span&gt;])
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; i == &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;: &lt;span style=&#34;color:#228b22&#34;&gt;# Timeout&lt;/span&gt;
+      &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;9ERROR!&amp;#39;&lt;/span&gt;)
+      &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;SSH could not login. Here is what SSH said:&amp;#39;&lt;/span&gt;)
+      &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt;(child.before, child.after)
+      &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; None       
+  child.sendline(password)
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; child
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;main&lt;/span&gt;():
+
+  f = &lt;span style=&#34;color:#658b00&#34;&gt;open&lt;/span&gt;(input_file, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;r&amp;#34;&lt;/span&gt;)
+  server_list = f.readlines()
+
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;for&lt;/span&gt; server &lt;span style=&#34;color:#8b008b&#34;&gt;in&lt;/span&gt; server_list:
+    child = ssh_command (user, server, password, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;script.sh&amp;#39;&lt;/span&gt;)
+    child.expect(pexpect.EOF)
+    output = child.before
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; __name__ == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;:
+  main()
+  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Icinga Service Cluster Monitor</title>
+      <link>http://caffeinatedengineering.io/post/cluster-script/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/cluster-script/</guid>
+      <description>
+
+&lt;p&gt;When monitoring large scale environments, email noise can be a real concern, as can having a single point of failure.  When monitoring services such as ntp where the check is the same on many hosts and has the ability to fail across many or all of them at once, notifications can pile up quickly.  Even if this is not a concern, it&amp;rsquo;s simply not necessary to alert on the same failure across all monitored machines.&lt;/p&gt;
+
+&lt;p&gt;This script will allow you to send out a single notification that gives the status of the cluster.  A single output listing Critical, Warning, or Unknown.  Using the ntp example, you create a service check to monitor ntp to make sure it stays in sync.  If for some reason an external event causes an issue, for example an ntp server is bad, or maybe there is a bug in the script, using this script will save you from the email storm of every host alerting for the same issue.&lt;/p&gt;
+
+&lt;p&gt;Using the Icinga &lt;a href=&#34;https://wiki.icinga.org/display/Dev/Icinga-Web+REST+API&#34; target=&#34;_blank&#34;&gt;Rest API&lt;/a&gt; you can get a json or xml output that can then be parsed.  I prefer to use JSON and Python, let&amp;rsquo;s begin.&lt;/p&gt;
+
+&lt;h2 id=&#34;initial-configuration&#34;&gt;Initial Configuration&lt;/h2&gt;
+
+&lt;p&gt;Create a service check for ntp that will monitor the offset and make sure it stays within allowable bounds.  This service check should check actively or it can be passive if you are using nsca.  They key is that it has notifications disabled, for ease of use I created a service template that I build upon.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;define service{
+    name                     monitoring-cluster-service
+    use                      monitoring-service
+    notifications_enabled    0
+    register                 0
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will allow me to just assign this template to all services I want to use the cluster check with.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;define service{
+    use                             monitoring-cluster-service
+    host_name                       host1
+    service_description             NTP Offset
+    check_command                   check_ntp!600
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2 id=&#34;cluster-configuration&#34;&gt;Cluster Configuration&lt;/h2&gt;
+
+&lt;p&gt;Now we need to setup the cluster.  First we create a template for our clusters.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;define service{
+    name                     monitoring-service
+    use                      app-service
+    notifications_enabled    1
+    contact_groups           admins
+    register                 0
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we define the cluster service.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;define service{
+    use                             monitoring-service
+    host_name                       monqaicinga203
+    service_description             NRPE Custer
+    servicegroups                   clusters
+    check_command                   check_cluster!Service - NRPE!5 ;&amp;lt;cmd&amp;gt; &amp;lt;desc&amp;gt; &amp;lt;threshold&amp;gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;At this point you have a service check that will show alarms on the dashboard but in the event of a widespread failure will not flood your email inbox, instead the single cluster script will send out a notification of the events.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-script&#34;&gt;The Script&lt;/h2&gt;
+
+&lt;p&gt;The latest can always be found on my Github.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;json&lt;/span&gt;
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;requests&lt;/span&gt;
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;sys&lt;/span&gt;
+
+Service = sys.argv[&lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;]
+CritThreshold = sys.argv[&lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;]
+
+Url = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+r = requests.get(Url)
+
+JsonData = {}
+JsonData = r.json()
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;main&lt;/span&gt; ():
+
+    CritNum = &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;
+    WarnNum = &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;
+    UnKnownNum = &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;
+
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#8b008b&#34;&gt;in&lt;/span&gt; JsonData[&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;result&amp;#39;&lt;/span&gt;]:
+
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; Service &lt;span style=&#34;color:#8b008b&#34;&gt;in&lt;/span&gt; item.values():
+        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; item.get(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;SERVICE_CURRENT_STATE&amp;#39;&lt;/span&gt;) == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;1&amp;#39;&lt;/span&gt;:
+        WarnNum = WarnNum + &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;
+        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;elif&lt;/span&gt; item.get(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;SERVICE_CURRENT_STATE&amp;#39;&lt;/span&gt;) == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;:
+        CritNum = CritNum + &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;
+        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;elif&lt;/span&gt; ite.get(&lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;SERVICE_CURRENT_STATE&amp;#39;&lt;/span&gt;) == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;3&amp;#39;&lt;/span&gt;:
+        UnKnownNum = UnKnownNum + &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;  
+
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; CritNum &amp;gt; CritThreshold:
+        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt; WarnNum, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;machines warning&amp;#39;&lt;/span&gt;, CritNum, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;machines critical&amp;#39;&lt;/span&gt;, UnKnownNum, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;machines Unknown&amp;#39;&lt;/span&gt;
+        sys.&lt;span style=&#34;color:#658b00&#34;&gt;exit&lt;/span&gt;(&lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;)
+    &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;else&lt;/span&gt;:
+        &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt; Service, &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;is above critical threshold&amp;#39;&lt;/span&gt;
+        sys.&lt;span style=&#34;color:#658b00&#34;&gt;exit&lt;/span&gt;(&lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;)
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;if&lt;/span&gt; __name__ == &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;:
+    main()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing OpenConnect on OSX 10.9 Maverick</title>
+      <link>http://caffeinatedengineering.io/post/openconnect/</link>
+      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/openconnect/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.infradead.org/openconnect/&#34; target=&#34;_blank&#34;&gt;OpenConnect&lt;/a&gt; is a great alternative to Cisco&amp;rsquo;s AnyConnect client and is completely cross platform and very easy to setup and configure.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install &lt;a href=&#34;http://macports.org&#34; target=&#34;_blank&#34;&gt;Macports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;sudo port install openconnect&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;http://tuntaposx.sourceforge.net/&#34; target=&#34;_blank&#34;&gt;TunTap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install a &lt;a href=&#34;http://www.infradead.org/openconnect/vpnc-script.html&#34; target=&#34;_blank&#34;&gt;vpnc-script&lt;/a&gt; to ensure proper dns configuration&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can install openconnect from source but the dependency list can be a little scary if you have never done this sort of thing before.  Even if you are comfortable building software packages yourself, I wouldn&amp;rsquo;t do it, it is simply not worth the effort on a virgin 10.9 install.  To use openconnect, open a terminal and type the following command&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;sudo openconnect -u&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;User is the user name assigned to you and server is the server you would connect to with the AnyConnect client.  Your admin should provide this for you but if you have the ability, start AnyConnect and connect with it, then under the statistics tab you will see a server ip, that is what you are looking for.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using MariaDB with Icinga 1x</title>
+      <link>http://caffeinatedengineering.io/post/mariadb-with-icinga/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/mariadb-with-icinga/</guid>
+      <description>
+
+&lt;h3 id=&#34;installing-from-scratch&#34;&gt;Installing From Scratch&lt;/h3&gt;
+
+&lt;p&gt;When you do an install from scratch and following the &lt;a href=&#34;https://wiki.icinga.org/display/howtos/Setting+up+Icinga+with+IDOUtils+on+RHEL&#34; target=&#34;_blank&#34;&gt;icinga documentation&lt;/a&gt; for installing IDOUtils the only changes necessary are:&lt;/p&gt;
+
+&lt;p&gt;Add the MariaDB repo to yum, &lt;strong&gt;/etc/yum.repos.d/MariaDB.repo&lt;/strong&gt;.  In this case I am using Cent6_64bit and Maria 5.5.  For other choices go &lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;# MariaDB 5.5 CentOS repository list - created 2013-10-14 21:01 UTC
+# http://mariadb.org/mariadb/repositories/
+[mariadb]
+name = MariaDB
+baseurl = http://yum.mariadb.org/5.5/centos6-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now install MariaDB&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yum install MariaDB-server MariaDB-client&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The rest of the steps are the same for both Icinga and Icinga-Web&lt;/p&gt;
+
+&lt;h3 id=&#34;migrating-from-mysql-to-mariadb&#34;&gt;Migrating from MySQL to MariaDB&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Make sure you back up your database by doing a proper dump, as you will need to reinstall the schema&amp;rsquo;s and any data.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Stop services&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;service mysql stop
+service icinga stop
+service ido2db stop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Uninstall mysql&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yum list | grep mysql
+yum remove xxx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You don&amp;rsquo;t need to uninstall everything as much of it will be reinstalled later.  The bare minimum would be mysql-server.  This will also uninstall the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;icinga-idoutils-libdbi-mysql&lt;/li&gt;
+&lt;li&gt;nagios-plugins&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Install MariaDB&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yum install Mariadb-server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Install IDOUtils&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yum install icinga-idoutils icinga-idoutils-libdbi-mysql&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Recreate the database according to the &lt;a href=&#34;https://wiki.icinga.org/display/howtos/Setting+up+Icinga+with+IDOUtils+on+RHEL&#34; target=&#34;_blank&#34;&gt;icinga documentation&lt;/a&gt;.  This will also need to be done for &lt;a href=&#34;http://docs.icinga.org/latest/en/icinga-web-scratch.html&#34; target=&#34;_blank&#34;&gt;Icinga-Web&lt;/a&gt; as well.&lt;/p&gt;
+
+&lt;p&gt;Restart the services&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;service mysql start
+service icinga start
+service ido2db start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You should be all set to log in.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Cheatsheet</title>
+      <link>http://caffeinatedengineering.io/post/arch-cheatsheet/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/arch-cheatsheet/</guid>
+      <description>
+
+&lt;p&gt;When it comes to administering servers, even Windows servers, Linux is a much better choice in my opinion.  Many of the tools needed come pre-installed and are generally of a higher quality then those developed for Windows.  It may seem counter intuitive and it really depends on what you do on a day to day basis but for those that have a need or a desire, this cheat sheet may help you out.  It is geared around Arch Linux, my preferred distribution, but many of the commands will work with most if not all versions of Linux.&lt;/p&gt;
+
+&lt;p&gt;I am not going to go through how to install Arch as the &lt;a href=&#34;https://wiki.archlinux.org/index.php/Installation_Guide&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; for this is already excellent and many people keep it as up to date as possible.  This is merely a partial list of common commands that I find myself using often enough that I wrote them down.  I often keep this list on a flash drive so that when I am standing up new servers I can cut and paste necessary sections rather than have to type them in constantly.&lt;/p&gt;
+
+&lt;p&gt;The list is broken up into sections to keep things somewhat neat and to make it easy for me to update it as necessary.  Feel free to make any suggestions for additions to this list.&lt;/p&gt;
+
+&lt;h3 id=&#34;package-management&#34;&gt;PACKAGE MANAGEMENT&lt;/h3&gt;
+
+&lt;p&gt;Pacman is the default tool for installing, updating and otherwise managing your Arch Linux installation.  The full documentation can be found &lt;a href=&#34;https://wiki.archlinux.org/index.php/Pacman&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; but below are the most common commands.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;pacman -S    # install a package
+pacman -Syu  # upgrade the system
+pacman -Rn   # remove a package with and backup configuration files
+pacman -Rsn  # remove a package and all dependencies&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;commonly-installed-packages&#34;&gt;Commonly Installed Packages&lt;/h3&gt;
+
+&lt;p&gt;These are packages that I use on my workstation.  You may not need all of these or you may need more.  On a high level I use &lt;a href=&#34;https://wiki.archlinux.org/index.php/Fluxbox&#34; target=&#34;_blank&#34;&gt;Fluxbox&lt;/a&gt; as my desktop and &lt;a href=&#34;https://wiki.archlinux.org/index.php/QEMU&#34; target=&#34;_blank&#34;&gt;QEMU&lt;/a&gt; for all my virtual machines.  A few of the less commonly known programs in the list are &lt;a href=&#34;https://wiki.archlinux.org/index.php/SLiM&#34; target=&#34;_blank&#34;&gt;slim&lt;/a&gt;(graphical login manager), &lt;a href=&#34;https://wiki.archlinux.org/index.php/Tilda&#34; target=&#34;_blank&#34;&gt;tilda&lt;/a&gt;(used for overlaying a terminal window on the background), and &lt;a href=&#34;https://wiki.archlinux.org/index.php/Vifm&#34; target=&#34;_blank&#34;&gt;vifm&lt;/a&gt;(file manager with vi bindings).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;X Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;xorg-server&lt;/li&gt;
+&lt;li&gt;xorg-apps&lt;/li&gt;
+&lt;li&gt;xorg-message&lt;/li&gt;
+&lt;li&gt;xf86-video-noveau&lt;/li&gt;
+&lt;li&gt;xlockmore&lt;/li&gt;
+&lt;li&gt;xorg-xcalc&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Development Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;base-devel&lt;/li&gt;
+&lt;li&gt;tk&lt;/li&gt;
+&lt;li&gt;python2&lt;/li&gt;
+&lt;li&gt;git&lt;/li&gt;
+&lt;li&gt;vim&lt;/li&gt;
+&lt;li&gt;texlive-most&lt;/li&gt;
+&lt;li&gt;lua&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;GUI Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rxvt&lt;/li&gt;
+&lt;li&gt;slim&lt;/li&gt;
+&lt;li&gt;fluxbox&lt;/li&gt;
+&lt;li&gt;chromium&lt;/li&gt;
+&lt;li&gt;feh&lt;/li&gt;
+&lt;li&gt;conky&lt;/li&gt;
+&lt;li&gt;tilda&lt;/li&gt;
+&lt;li&gt;vifm&lt;/li&gt;
+&lt;li&gt;xpdf&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Virtualization Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;qemu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;System Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ntpd&lt;/li&gt;
+&lt;li&gt;openssh&lt;/li&gt;
+&lt;li&gt;rdesktop&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;unzip&lt;/li&gt;
+&lt;li&gt;sudo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Office Packages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;libreoffice&lt;/li&gt;
+&lt;li&gt;libreoffice-en-US&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;networking&#34;&gt;Networking&lt;/h3&gt;
+
+&lt;p&gt;Networking has always been a tricky thing to configure. Sometimes it works right out of the box, other times it takes a little tweaking. I have had very good luck with the &lt;a href=&#34;https://wiki.archlinux.org/index.php/Network_Configuration&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; and these commands are generally all that is necessary for the most common setups.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using DHCP&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;lspci -v | more             # see what devices are present on the system
+dmesg | grep                # check to see if the module was loaded
+ls /sys/class/net           # get the name assigned to the device
+ip link set up              # enable the device
+ip link show                # check the status of the device
+dhcpcd                      # enable dhcp for the device
+ip addr show                # check the ip address of the device
+systemctl enable dhcpcd     # enable dhcp at startup for the device&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;strong&gt;Static IP&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Place this into /etc/systemd/system/network.service&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;[Unit]
+Description=Wired static IP setup
+Wants=network.target
+Before=network.target
+BindsTo=sys-subsystem-net-devices-.device
+After=sys-subsystem-net-devices-.device
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/ip link set dev  up
+ExecStart=/usr/bin/ip addr add  dev
+ExecStart=/usr/bin/ip route add default via
+
+[Install]
+WantedBy=multi-user.target
+systemctl start network
+systemctl enable network&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To set the DNS&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#34;nameserver xxx.xxx.xxx.xxx&amp;#34; &amp;gt;&amp;gt; /etc/resolv.conf&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;x-windows-configuration&#34;&gt;X Windows Configuration&lt;/h3&gt;
+
+&lt;p&gt;This is a highly subjective section and is tailored towards my needs and wants. Everybody is different but this should give you an idea of where to start or hopefully save you the time of reading through numerous wiki pages to figure out one thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit the bash profile to use a graphical login manager&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;cp /etc/skel/.bash_profile ~/                            # default bash profile
+echo &amp;#34;[[ -z $DISPLAY &amp;amp;&amp;amp; $XDG_VTNR -eq 1]]&amp;#34; exec slim     # to start slim on startup&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Tell slim to start fluxbox upon successful login&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;touch ~/.xinitrc
+echo &amp;#34;#!/bin/sh&amp;#34; &amp;gt;&amp;gt; ~/.xinitrc
+echo &amp;#34;exec startfluxbox&amp;#34; &amp;gt;&amp;gt; ~/.xinitrc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Enable slim&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;systemctl enable slim.service&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Set the background&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;fehbg --bg-scale ~./fluxbox/backgrounds/xxx.jpg/png/etc
+chmod 770 ~/.fehbg&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Misc stuff&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;usermod -aG log                       # this will allow the regular user access to the system log files
+cp /etc/conky/conky.conf ~/.conkyrc   # default conky script&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Fluxbox Configuration&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is again going to depend on what you use and if you even use Fluxbox vs K, Gnome, XFCE,etc. These commands should be added to ~/.fluxbox/startup.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;tilda &amp;amp;                                    # autostart tilda
+conky &amp;amp;                                    # autostart conky
+xrandr --output DVI-I-1 --right-of VGA-1   # dual monitor (change screens as needed)
+sh ~/.fehbg &amp;amp;                              # set the background image&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;tilda-configuration&#34;&gt;Tilda Configuration&lt;/h3&gt;
+
+&lt;p&gt;This will fill the remainder of the space not used by conky on my left monitor. Under the &lt;em&gt;General&lt;/em&gt; tab uncheck &lt;em&gt;Always on top&lt;/em&gt;. Under the &lt;em&gt;Appearance&lt;/em&gt; tab check &lt;em&gt;Enable Transparency&lt;/em&gt; and set &lt;em&gt;Level of Transparency&lt;/em&gt; to &lt;strong&gt;100%&lt;/strong&gt;.  I tend to use dark backgrounds so under &lt;em&gt;Colors&lt;/em&gt; I use &lt;strong&gt;Green on Black&lt;/strong&gt; and I disable the scrollbar and set the following values under &lt;em&gt;Appearance&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;height 75%
+width 40%
+x-position 300&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;usb-devices&#34;&gt;USB DEVICES&lt;/h3&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;dmesg | grep -E &amp;#34;sd[a-z]&amp;#34;         # list all storage devices the system is aware of
+mount -t auto /dev/sd? /mnt/usb   # mount the device
+umount /dev/sd?                   # unmount the device&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;kvm-qemu&#34;&gt;KVM/QEMU&lt;/h3&gt;
+
+&lt;p&gt;I tend to use QEMU with KVM for managing virtual machines due to unreliability I have experienced with virtual box in general. Most people will never have issues with virtual box and it can be easier to setup configurations using it but I found QEMU to be better and coupled with KVM to be faster and more stable. When enabling usb passthrough the device must be unmounted on the host system.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;gpasswd -a  kvm                                                               # add user to the kvm group
+dd if=/dev/cdrom of=mycdimg.iso                                               # dump the contents of the dvd to the hd for install
+qemu-img create -f qcow2 myimage.qcow2 10G                                    # create a dynamic image(qcow2)
+qemu-img create -f raw myimage.qcow2 10G                                      # create a static image(qcow2)
+qemu-system- -enable-kvm -m 1024 -cdrom xxx.iso -boot d -name xxx xxx.qcow2   # nstall the guest OS
+qemu-system- -enable-kvm -m 1024 xxx.qcow2                                    # this will run the guest OS
+qemu-system- -m 512 -usbdevice host:xxx:xxx xxx.qcow2                         # enable usb pass through
+qemu-img convert -O vdi xxx.qcow2 xxx.vdi                                     # convert the image for use with vbox&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;misc-commands&#34;&gt;MISC Commands&lt;/h3&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ntpd -sd                          # sync the time
+systemctl start ntpd              # start ntpd
+systemctl enable ntpd             # start ntpd at boot
+systemctl start sshd              # start ssh daemon
+systemctl enable sshd.service     # start ssh at boot
+
+useradd -m -g [initial_group] -G [additional_groups] -s [login_shell] [username]   # add a normal user account
+passwd [username] [password]                                                       # change the password of a normal account&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Plaintext Truth About Password Storage Vulnerabilties</title>
+      <link>http://caffeinatedengineering.io/post/password/</link>
+      <pubDate>Sun, 05 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/password/</guid>
+      <description>
+
+&lt;p&gt;It seems every few months a major site has their user database compromised one way or another. Gwaker, LinkedIn, and last.fm among others have been attacked, having their user&amp;rsquo;s login credentials and other data posted online for the world to see. How this happened is an after thought, with near certainty I can say that any information stored on a computer connected to a network will at some point be compromised. This is just the way of life for security professionals, we need to defend against that using proper security protocols, secure coding practices, and constant vigilance, but what happens in the aftermath of a breach? An attacker has managed to download the entire database from your website, all those annoying captcha&amp;rsquo;s, time-delayed logins, and the fancy two-factor authentication are no good now, it is just your data and an attacker that has time and resources on their side, or do they.&lt;/p&gt;
+
+&lt;p&gt;With any luck you have sufficient protections in place that will buy you at least some time with which to react to the break-in. The obvious goal would be to prevent the attacker from decrypting any of the credentials in the database, baring that your security measures will hopefully buy you enough time to notify customers of the breach, take precautions to contain the damage, and implement new measures to prevent this in the future. So what security methods should you be using to keep those login credentials safe and why is it such a big deal) so you should be fine, right? Yes&amp;hellip;no&amp;hellip;depends, there is no easy answer to this so lets start with what a hash actually is.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-hash&#34;&gt;The Hash&lt;/h2&gt;
+
+&lt;p&gt;In its most basic form a hash, also called a digest, is a long string of hex characters output from a cryptographic hashing algorithm such as MD5 or SHA-1.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;hashlib&lt;/span&gt;
+
+password = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;mypassword&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;MakeHash&lt;/span&gt;(x):
+  h = hashlib.sha1(x)
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; h.hexdigest()
+
+d = MakeHash(password)
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt; d
+
+~&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;$&lt;/span&gt; &lt;span style=&#34;color:#b452cd&#34;&gt;91&lt;/span&gt;dfd9ddb4198affc5c194cd8ce6d338fde470e2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is not meant to be implemented but merely for an example.  You could run this yourself by copying it into an editor, saving, and launching it with a python version greater than 2.7.  You can see how quickly it executes.  This is the point with SHA-1 and MD5, they are designed, not to store passwords, but to verify the integrity of a file.  Which brings us to an important lesson, the algorithm should work at its best when used on the hardware it was designed for but receive no gain or work poorly in any other environment.  Both SHA-1 and MD5 work great on commodity hardware and if an attacker were to build a machine for the sole purpose of cracking passwords they would be able to wreak havoc on keyspaces up to 6 characters without even breaking a sweat.&lt;/p&gt;
+
+&lt;p&gt;Time for a little math lesson.  A typical password may contain 26 letters and 10 numbers which when we account for lowercase and uppercase gives use a total character set of 62.  We use an exponent to represent the size of the key space, in this case 6 which gives us a total of 5 billion possible hashes.  On a typical system it would take about an hour and a half to brute-force the entire keyspace, on a purpose-built machine it will take only a few minutes, if that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ob-security.info/?p=546&#34; target=&#34;_blank&#34;&gt;Project Erebus&lt;/a&gt; v2.5 by d3ad0ne, is a $12000 beast, the heart of which is eight AMD Radeon HD7970 GPU cards. Running version 0.10 of oclHashcat-lite, it needed only 12 hours to brute force the entire keyspace for any eight-character password containing upper-case and lower-case letters, digits or symbols. Doing the math that is 96 characters with an exponent of 8, which figures out to 7.2 quadrillion hashes. Keep in mind that this was for the entire keyspace, the vast majority of passwords likely fell within the first 2 hours. This is what your database could be facing and with systems like this being created it won&amp;rsquo;t take long for it to crack under pressure.&lt;/p&gt;
+
+&lt;p&gt;Going to larger more complex passwords is not the answer, this will only work until the next advancement in hardware comes along at best, at worst your users will simply type the same word over and over or fill the keyspace up with 0-N numbers. This is just as bad and can actually be broken eaiser using mask attacks or my favorite, hybrid attacks.  I will go into detail in another post, for now just know that systems like this are out there and more common than you think.  The solution, if you can call it that is to start taking password security seriously, starting with throwing a little salt at the attacker, and maybe some pepper as well.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-pot-of-gold-at-the-end-of-the-rainbow&#34;&gt;The Pot Of Gold At The End Of The Rainbow&lt;/h2&gt;
+
+&lt;p&gt;When people talk about pre-compiled tables used to crack passwords they are generally referring to two types, the simple two column lookup tables and the much more common rainbow table.  The simple tables are just what they sound like, a hash calculated using a specific algorithm on one side and the cleartext on the other side.  When using these tables the attacker is freed from having to do any computation at all.  They merely search and compare the hashes, thus common passwords such as password1 fall instantly.  When combined with other attack methods such as a hybrid attack, which involves rules that alter the tables in common ways, it becomes very simple and fast to pull out many of the most common passwords as multiple people may have used the same password but the attacker only has to search once.  This fact alone makes tables very cost-effective from a time-cost standpoint.&lt;/p&gt;
+
+&lt;p&gt;While these tables work well for shorter passwords, when the keyspace grows they become far to large.  Rainbow tables were created to help alleviate some of the unwieldiness.  They use a type of hash chain to cut down on what the table has to store.  These only work up to a given keyspace as well and really came into widespread use as RAM prices dropped, allowing attackers to store much of the table in active memory.  Once the key space gets to about nine these become too large as well.  This is vastly simplifying the ideas and math behind tables but it gives you an idea about what they are and how they function in a broad sense.  I will go into much greater detail in a later article but for most purposes due to the advances in GPU and FPGA hardware based attacks tables are not time-cost effective anymore except under very specific conditions involving the keyspace and algorithm the attacker is working against.&lt;/p&gt;
+
+&lt;h2 id=&#34;season-it-with-some-salt-and-pepper-or-the-end-of-the-rainbow&#34;&gt;Season It With Some Salt And Pepper or The End Of The Rainbow&lt;/h2&gt;
+
+&lt;p&gt;People love to talk about salting passwords and making sure to use a good salt but what do they really mean? A salt is nothing more than a string that is added to the password before it is hashed, generally at the beginning but you could put it at the end it makes no difference as long as you are consistent. There is really nothing complex about it, the main reason to salt the password is to prevent attacks with pre-compiled tables, including rainbow tables, which has the added result of preventing attack cost sharing.  As tables became more common in the early and mid 2000&amp;rsquo;s salting the password became a hard requirement.&lt;/p&gt;
+
+&lt;p&gt;The premise behind a salt is that even a slight change in the password will alter the hash in a major way. This is what is known as the avalanche effect, producing digests that are very different even when the input is only slightly altered, no longer will password1 be hashed to the same value, thus creating more work for the attacker.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;os&lt;/span&gt;, &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;hashlib&lt;/span&gt;, &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;base64&lt;/span&gt;
+
+password = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;mypassword&amp;#34;&lt;/span&gt;
+salt = base64.b64encode(os.urandom(&lt;span style=&#34;color:#b452cd&#34;&gt;64&lt;/span&gt;))
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;MakeSaltedHash&lt;/span&gt;(p,s):
+  h = hashlib.sha1(s + p)
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; h.hexdigest()
+
+d = MakeSaltedHash(password, salt)
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;print&lt;/span&gt; d
+
+~&lt;span style=&#34;color:#a61717;background-color:#e3d2d2&#34;&gt;$&lt;/span&gt; b6bc00f55aad0961ed0d7bcc1262dba9ab28f00b&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will now salt the password with a large enough string to prevent what is known as salt collision, when two password hashes use the same salt. This is a rather excessively large salt but some password files can have over 100,000 entries so this may be necessary to counter what is known as the &lt;a href=&#34;http://en.wikipedia.org/wiki/Birthday_problem&#34; target=&#34;_blank&#34;&gt;birthday problem&lt;/a&gt;. A more reasonable value for the salt would be 32bits which would require nearly 4 billion separate tables and roughly 50,000 outputs before you encountered a 25% collision rate. In the above example with 100,000 entries and a 32bit salt the probability of a random collision would be about 70%. Please do not do silly things like hash the username, UID or some other known value as a salt either.  This is a waste and opens the hash to various attack vectors, to be effective the salt needs to be a cryptographically random string and yes there is a difference between a pseudo-random string and a cryptographically random string. There is no such thing as a truly random number but there are viable ways to come close. According to the official Python &lt;a href=&#34;http://docs.python.org/dev/library/os.html?highlight=urandom#os.urandom&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; os.urandom is suitable for this type of application but to be certain other references should also be sought out.&lt;/p&gt;
+
+&lt;p&gt;The salt is stored with the password in the format of $x$salt$hash where x is the algorithm used, which contrary to initial perception, does not present any more of a risk as it is not meant to be secret, but merely to make the decryption process more time expensive for the attacker.  For those that want more protection of this sort, we have pepper.  Pepper is nothing more than a string stored outside the database, generally in source code, that is also used in the hashing process.  It must be noted though that if the attacker gains local access to the server then this method in null.  This is only a feasible method if the attacker only manages to dump the database and even then the jury is still out whether this is really worth the extra effort.  The other concern is that when applying pepper, by its very nature, you now have applied a &amp;ldquo;key&amp;rdquo; and as such that key must be protected and you are also starting to get into HMAC, hash message authentication code.&lt;/p&gt;
+
+&lt;h2 id=&#34;stretch-those-legs-for-the-long-road-ahead&#34;&gt;Stretch Those Legs For The Long Road Ahead&lt;/h2&gt;
+
+&lt;p&gt;Salting is only half the battle, as stated before you have to make the attack cost more when run in non-native environments.  This involves a process known as key streching, where you hash the salt and password, rinse, repeat.  There are several ways to do this, I did it this way for the sake of simplicity.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;os&lt;/span&gt;, &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;hashlib&lt;/span&gt;, &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;base64&lt;/span&gt;
+
+password = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;mypassword&amp;#34;&lt;/span&gt;
+salt = base64.b64encode(os.urandom(&lt;span style=&#34;color:#b452cd&#34;&gt;64&lt;/span&gt;))
+iterations = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;10000&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;MakeSaltedHash&lt;/span&gt;(p, s, i):
+  h = haslib.sha1(s + p)
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;while&lt;/span&gt; iterations &amp;gt; &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;:
+    h = hashlib.sha1(h.hexdigest() + p + s)
+    iterations = iterations - &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;
+  &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; h.hexdigest()
+
+d = MakeSaltedHash(password, salt, iterations)
+
+~&lt;span style=&#34;color:#228b22&#34;&gt;# 10adf3f3ec724dd4c3acf9aca51c29e4bcb35d04&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will now perform the hashing process 10,000 times which makes it much more difficult to implement effectively on GPU&amp;rsquo;s.  This is not a perfect solution and I stress again should not be implemented as written because there is a attack vector known as a  transferable state attack which can reduce the computational time necessary by 80% when using SHA-256.  The correct way to implement this would be to use Adaptive Key Derivation Functions such as  bcrypt, which uses a work factor and a block cipher called blowfish which along with the work factor means it is slow as hell in relative terms.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#008b45;text-decoration:underline&#34;&gt;bcrypt&lt;/span&gt;
+
+password = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;mypassword&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;MakeBcryptHash&lt;/span&gt;(p):
+  salt = bcrypt.gensalt()
+  h = bcrypt.hashpw(salt, p)
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; h
+
+d = MakeBcryptHash(password)
+
+~&lt;span style=&#34;color:#228b22&#34;&gt;# 708fdc2140b61fbc2100c2c759f76fbce207b58f9aae80db850fc7ab266e1a7e0dc5361c6a47d95f663efae78e0702b41423f2bd355445181dd6438ae846f7fb&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So we have successfully beaten tables with salt and countered GPU accelerated systems with key stretching, all that is left are the FPGA&amp;rsquo;s.  To counter them we need to move to memory-bound cryptographic functions.&lt;/p&gt;
+
+&lt;h2 id=&#34;we-need-more-memory&#34;&gt;We Need More Memory&lt;/h2&gt;
+
+&lt;p&gt;The other major hardware based attack comes from FPGAs, Field Programmable Logic Arrays.  These work similar to GPU&amp;rsquo;s in that they can do many simple calculations very quickly but unlike GPU&amp;rsquo;s they have dedicated on-board memory.  The only way to counter them is to use memory-bound functions.  These are math functions designed to use lots of memory in non-contiguous blocks.  While FPGA&amp;rsquo;s have on-board memory they are not capable of handling the requirements of these functions whose computational time is dependent upon access to often large amounts of memory.  One choice that is gaining in popularity is scrypt.  While it is not in widespread use due to is relatively untested nature it is starting to slowly gain traction. It contains a work factor like bcrypt but also a memory factor that allows the administrator to dictate memory usage. This combined with other features do the most complete job of defeating many of the available attack vectors. The old saying still applies though, &amp;ldquo;Garbage in, garbage out&amp;rdquo;. If the tools are not used properly and the users don&amp;rsquo;t at least attempt to pick a secure password no amount of math mumbo jumbo will protect your data.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

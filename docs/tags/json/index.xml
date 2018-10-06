@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Json on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/json/</link>
+    <description>Recent content in Json on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Mon, 10 Mar 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Icinga Service Cluster Monitor</title>
+      <link>http://caffeinatedengineering.io/post/cluster-script/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/cluster-script/</guid>
+      <description>When monitoring large scale environments, email noise can be a real concern, as can having a single point of failure. When monitoring services such as ntp where the check is the same on many hosts and has the ability to fail across many or all of them at once, notifications can pile up quickly. Even if this is not a concern, it&amp;rsquo;s simply not necessary to alert on the same failure across all monitored machines.</description>
+    </item>
+    
+  </channel>
+</rss>

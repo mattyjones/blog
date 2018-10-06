@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/drafts/</link>
+    <description>Recent content in Drafts on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Sat, 20 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/drafts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Engineering Principles</title>
+      <link>http://caffeinatedengineering.io/drafts/engineering_principles/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/drafts/engineering_principles/</guid>
+      <description> Topics  fail fast and pivot blameless culture move fast slowly trust but verify  </description>
+    </item>
+    
+    <item>
+      <title>Use Amazon S3 and Glacier As A Remote Backup</title>
+      <link>http://caffeinatedengineering.io/drafts/s3_backup/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/drafts/s3_backup/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arch Linux on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/arch-linux/</link>
+    <description>Recent content in Arch Linux on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Mon, 12 Aug 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arch Linux Cheatsheet</title>
+      <link>http://caffeinatedengineering.io/post/arch-cheatsheet/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/arch-cheatsheet/</guid>
+      <description>When it comes to administering servers, even Windows servers, Linux is a much better choice in my opinion. Many of the tools needed come pre-installed and are generally of a higher quality then those developed for Windows. It may seem counter intuitive and it really depends on what you do on a day to day basis but for those that have a need or a desire, this cheat sheet may help you out.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bcrypt on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/bcrypt/</link>
+    <description>Recent content in Bcrypt on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Sun, 05 May 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/bcrypt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Plaintext Truth About Password Storage Vulnerabilties</title>
+      <link>http://caffeinatedengineering.io/post/password/</link>
+      <pubDate>Sun, 05 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/password/</guid>
+      <description>It seems every few months a major site has their user database compromised one way or another. Gwaker, LinkedIn, and last.fm among others have been attacked, having their user&amp;rsquo;s login credentials and other data posted online for the world to see. How this happened is an after thought, with near certainty I can say that any information stored on a computer connected to a network will at some point be compromised.</description>
+    </item>
+    
+  </channel>
+</rss>

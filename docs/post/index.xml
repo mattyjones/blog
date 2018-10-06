@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/post/</link>
+    <description>Recent content in Posts on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Sun, 21 Feb 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NotebookOps or Another Reason Word Processors Are Evil</title>
+      <link>http://caffeinatedengineering.io/post/notebookops/</link>
+      <pubDate>Sun, 21 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/notebookops/</guid>
+      <description>Hardware Stack Until recently I was unaware of anything resembling NotebookOps. Apparently I am not alone in being obsessively focused on the type, organization, and presentation of my notebook. Right down to the interface I chose to regularly interact with it.
+I have used Mead Composition notebooks and Pilot Precise pens for nearly twenty years. They had been working fine all through high school and beyond, I just never felt the need to change, basically I was lazy.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring Email Storm Mitigation</title>
+      <link>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</guid>
+      <description>No one likes to get flooded with email, most times its just annoying, but it can also mask a real problem. If in those 2000 emails is a single email saying the database was just corrupted, you really don&amp;rsquo;t want to miss it. There are several tools and ways to control email, but unfortunately most MTA&amp;rsquo;s don&amp;rsquo;t have a way to set a threshold over time variable. There is no way to say if N emails go out in N minutes stop sending email.</description>
+    </item>
+    
+    <item>
+      <title>Execute Python Commands Over SSH</title>
+      <link>http://caffeinatedengineering.io/post/ssh-script/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/ssh-script/</guid>
+      <description>This script can be used to execute a single command or a script that is located on a remote machine. The first argument is a text file containing a list of servers that you wish to execute the command on. The next arguments are for the ssh user/password. You can also hard code these into a file to avoid typing them or for allowing you to execute this script automatically. The only dependency is pexpect and this will run in any Python version &amp;gt; 2.</description>
+    </item>
+    
+    <item>
+      <title>Icinga Service Cluster Monitor</title>
+      <link>http://caffeinatedengineering.io/post/cluster-script/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/cluster-script/</guid>
+      <description>When monitoring large scale environments, email noise can be a real concern, as can having a single point of failure. When monitoring services such as ntp where the check is the same on many hosts and has the ability to fail across many or all of them at once, notifications can pile up quickly. Even if this is not a concern, it&amp;rsquo;s simply not necessary to alert on the same failure across all monitored machines.</description>
+    </item>
+    
+    <item>
+      <title>Installing OpenConnect on OSX 10.9 Maverick</title>
+      <link>http://caffeinatedengineering.io/post/openconnect/</link>
+      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/openconnect/</guid>
+      <description>OpenConnect is a great alternative to Cisco&amp;rsquo;s AnyConnect client and is completely cross platform and very easy to setup and configure.
+ Install Macports sudo port install openconnect Install TunTap Install a vpnc-script to ensure proper dns configuration  You can install openconnect from source but the dependency list can be a little scary if you have never done this sort of thing before. Even if you are comfortable building software packages yourself, I wouldn&amp;rsquo;t do it, it is simply not worth the effort on a virgin 10.</description>
+    </item>
+    
+    <item>
+      <title>Using MariaDB with Icinga 1x</title>
+      <link>http://caffeinatedengineering.io/post/mariadb-with-icinga/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/mariadb-with-icinga/</guid>
+      <description>Installing From Scratch When you do an install from scratch and following the icinga documentation for installing IDOUtils the only changes necessary are:
+Add the MariaDB repo to yum, /etc/yum.repos.d/MariaDB.repo. In this case I am using Cent6_64bit and Maria 5.5. For other choices go here.
+# MariaDB 5.5 CentOS repository list - created 2013-10-14 21:01 UTC # http://mariadb.org/mariadb/repositories/ [mariadb] name = MariaDB baseurl = http://yum.mariadb.org/5.5/centos6-amd64 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB gpgcheck=1 Now install MariaDB</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Cheatsheet</title>
+      <link>http://caffeinatedengineering.io/post/arch-cheatsheet/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/arch-cheatsheet/</guid>
+      <description>When it comes to administering servers, even Windows servers, Linux is a much better choice in my opinion. Many of the tools needed come pre-installed and are generally of a higher quality then those developed for Windows. It may seem counter intuitive and it really depends on what you do on a day to day basis but for those that have a need or a desire, this cheat sheet may help you out.</description>
+    </item>
+    
+    <item>
+      <title>The Plaintext Truth About Password Storage Vulnerabilties</title>
+      <link>http://caffeinatedengineering.io/post/password/</link>
+      <pubDate>Sun, 05 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/password/</guid>
+      <description>It seems every few months a major site has their user database compromised one way or another. Gwaker, LinkedIn, and last.fm among others have been attacked, having their user&amp;rsquo;s login credentials and other data posted online for the world to see. How this happened is an after thought, with near certainty I can say that any information stored on a computer connected to a network will at some point be compromised.</description>
+    </item>
+    
+    <item>
+      <title>LaTeX and Git in an Academic Environment</title>
+      <link>http://caffeinatedengineering.io/post/latex-with-git/</link>
+      <pubDate>Thu, 04 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/latex-with-git/</guid>
+      <description>I hate word processors, I end up spending more time trying to figure out how to adjust the margins and get the graphs to look right then I spend writing the paper. I am thrilled that M$ Word will do nearly everything for me, but I have no desire to spend twenty minutes trying to find the right wizard. Content should always be separated from presentation, this is especially true when working on very long documents or any complex documents that contain multiple images, graphs, or mathematical and engineering notation.</description>
+    </item>
+    
+    <item>
+      <title>Administering Windows Servers with FreeBSD</title>
+      <link>http://caffeinatedengineering.io/post/windows-with-bsd/</link>
+      <pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/windows-with-bsd/</guid>
+      <description>FreeBSD, the less talked about cousin to Linux is not only a viable alternative to both Windows and Linux but in some ways is far better than either, it really comes down to personal choice and I am slowly choosing FreeBSD for more and more of my needs. Despite this, installing a graphical desktop on FreeBSD still requires a fair amount of work and some measure of skill. PC-BSD, FreeBSD with KDE and a graphical installer packaged together alleviates much of the work but for those that don&amp;rsquo;t want or need the baggage that comes with KDE, installing FreeBSD and building what you want is really the best option.</description>
+    </item>
+    
+    <item>
+      <title>Shell Wrapper for RDesktop</title>
+      <link>http://caffeinatedengineering.io/post/rdesktop-shell/</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/rdesktop-shell/</guid>
+      <description>I use Linux/OSX almost exclusively when it comes to system administration, even if the servers themselves are Windows. Sometimes this is not the easiest or best thing to do but many times it is much more efficient and quicker to write a script to do what I need to do, and many times those scripts are easier to write in *nix. It may look like your keyboard threw up on the screen but that one line of sed could save hours over the course of a week.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perl on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/perl/</link>
+    <description>Recent content in Perl on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Wed, 07 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/perl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitoring Email Storm Mitigation</title>
+      <link>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/sec-email-storm-mitigation/</guid>
+      <description>No one likes to get flooded with email, most times its just annoying, but it can also mask a real problem. If in those 2000 emails is a single email saying the database was just corrupted, you really don&amp;rsquo;t want to miss it. There are several tools and ways to control email, but unfortunately most MTA&amp;rsquo;s don&amp;rsquo;t have a way to set a threshold over time variable. There is no way to say if N emails go out in N minutes stop sending email.</description>
+    </item>
+    
+  </channel>
+</rss>

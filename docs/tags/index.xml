@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/</link>
+    <description>Recent content in Tags on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Mon, 12 Aug 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arch Linux</title>
+      <link>http://caffeinatedengineering.io/tags/arch-linux/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/arch-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aws</title>
+      <link>http://caffeinatedengineering.io/tags/aws/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Backups</title>
+      <link>http://caffeinatedengineering.io/tags/backups/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/backups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bcrypt</title>
+      <link>http://caffeinatedengineering.io/tags/bcrypt/</link>
+      <pubDate>Sun, 05 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/bcrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bsd</title>
+      <link>http://caffeinatedengineering.io/tags/bsd/</link>
+      <pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/bsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Centos</title>
+      <link>http://caffeinatedengineering.io/tags/centos/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>http://caffeinatedengineering.io/tags/devops/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://caffeinatedengineering.io/tags/git/</link>
+      <pubDate>Thu, 04 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Glacier</title>
+      <link>http://caffeinatedengineering.io/tags/glacier/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/glacier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Icinga</title>
+      <link>http://caffeinatedengineering.io/tags/icinga/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/icinga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Json</title>
+      <link>http://caffeinatedengineering.io/tags/json/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/json/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>http://caffeinatedengineering.io/tags/latex/</link>
+      <pubDate>Thu, 04 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mariadb</title>
+      <link>http://caffeinatedengineering.io/tags/mariadb/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/mariadb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>http://caffeinatedengineering.io/tags/monitoring/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mremote</title>
+      <link>http://caffeinatedengineering.io/tags/mremote/</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/mremote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notebookops</title>
+      <link>http://caffeinatedengineering.io/tags/notebookops/</link>
+      <pubDate>Sun, 21 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/notebookops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openconnect</title>
+      <link>http://caffeinatedengineering.io/tags/openconnect/</link>
+      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/openconnect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Osx</title>
+      <link>http://caffeinatedengineering.io/tags/osx/</link>
+      <pubDate>Sat, 14 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/osx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perl</title>
+      <link>http://caffeinatedengineering.io/tags/perl/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/perl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://caffeinatedengineering.io/tags/python/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rdesktop</title>
+      <link>http://caffeinatedengineering.io/tags/rdesktop/</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/rdesktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rdp</title>
+      <link>http://caffeinatedengineering.io/tags/rdp/</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/rdp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>http://caffeinatedengineering.io/tags/s3/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scrypt</title>
+      <link>http://caffeinatedengineering.io/tags/scrypt/</link>
+      <pubDate>Sun, 05 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/scrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sec</title>
+      <link>http://caffeinatedengineering.io/tags/sec/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/sec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secops</title>
+      <link>http://caffeinatedengineering.io/tags/secops/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/secops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell Programming</title>
+      <link>http://caffeinatedengineering.io/tags/shell-programming/</link>
+      <pubDate>Fri, 30 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/shell-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Engineering</title>
+      <link>http://caffeinatedengineering.io/tags/software-engineering/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows Server</title>
+      <link>http://caffeinatedengineering.io/tags/windows-server/</link>
+      <pubDate>Thu, 12 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/tags/windows-server/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

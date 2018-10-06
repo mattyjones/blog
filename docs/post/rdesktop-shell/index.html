@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.49" />
+  <meta name="author" content="Matt Jones">
+  <meta name="description" content="Open Source Infrastructure Hacker">
+
+  <link rel="stylesheet" href="/css/highlight.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  <link rel="stylesheet" href="http://caffeinatedengineering.iocss/override.css">
+  
+
+  <link rel="alternate" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+  <link rel="feed" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://caffeinatedengineering.io/post/rdesktop-shell/">
+
+  
+
+  <title>Shell Wrapper for RDesktop | Caffeinated Engineering</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Caffeinated Engineering</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="nav-item">
+          <a href="/#about">
+            Home
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#posts">
+            Posts
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#projects">
+            Projects
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#talks">
+            Talks
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#teaching">
+            Coaching
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+    
+
+    <h1 itemprop="name">Shell Wrapper for RDesktop</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2012-03-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Fri, Mar 30, 2012
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/shell-programming">shell programming</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/rdesktop">rdesktop</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/rdp">rdp</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/mremote">mremote</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2frdesktop-shell%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Shell%20Wrapper%20for%20RDesktop&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2frdesktop-shell%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2frdesktop-shell%2f&amp;title=Shell%20Wrapper%20for%20RDesktop"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2frdesktop-shell%2f&amp;title=Shell%20Wrapper%20for%20RDesktop"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Shell%20Wrapper%20for%20RDesktop&amp;body=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2frdesktop-shell%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <p>I use Linux/OSX almost exclusively when it comes to system administration, even if the servers themselves are Windows.  Sometimes this is not the easiest or best thing to do but many times it is much more efficient and quicker to write a script to do what I need to do, and many times those scripts are easier to write in *nix.  It may look like your keyboard threw up on the screen but that one line of sed could save hours over the course of a week.  With that being said, onward.</p>
+
+<p><a href="http://www.mremote.org/wiki/" target="_blank">MRemote</a> is a good program for accessing multiple servers with Windows RDP.  The tabbed interface and point and click configuration makes logging into and working on several servers at once very easy.  Unfortunately there is no direct port for *nix, there are several comparable programs for KDE, GNOME, and even OSX but they all lack the simplicity and are more cumbersome to make do what you want.  I use a mix of OSX and Linux so anything I write needs to be cross-platform and nothing currently available was, my needs also don&rsquo;t dictate that I need a fancy graphical program either.</p>
+
+<p>I ended up using <a href="http://www.rdesktop.org" target="_blank">rdesktop</a>, a commandline tool available as either a source download or through <a href="http://www.macports.org" target="_blank">MacPorts</a>.  Most Linux distributions should also have it prebuilt in their respective repositories.  When launching rdesktop you have the ability to set a lot of the typical options as I use this fairly often I wrote a simple script to set all these for me.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#! /bin/bash
+#
+# remote.sh
+# This will take a server hostname, compare it against a file, translate it to an IP
+# and launch rdesktop with a specific set of opitions. The file can be created using
+# the script MRConversion. You can use your own file as well, the format is
+# two columns: hostname IP Address. As of now it will also do simple pattern matching
+# ex. user enters db and servers are in the form *db*  will open in seperate windows.
+#
+# Usage:
+#
+# 1) copy and place this into a text editor and save it as remote.sh
+# 2) chmod +x remote.sh
+# 3) remote.sh &lt;servername&gt;
+#
+#
+#matt jones
+#updated 12/02/11
+#copyright GPL v2
+
+declare Input=&#34;$1&#34; # the server hostname or pattern you wish to connect to
+declare ServerList=&#34;/Users/matt/bin/scripts/ServerList.txt&#34; # MRConversion used for the translation
+declare ServerName=&#34;&#34; # the server name, used to ID the window
+declare LocalSharedDisk=&#34;$HOME&#34; # set the directory to share with the remote host
+declare SharedDiskName=&#34;$USER&#34; # the name of the shared disk on the remote system
+declare Resolution=&#34;1024x768&#34; # the desired resolution, replace -g $Resolution with -f for full screen
+declare UserName=&#34;&#34; # the desired login username
+
+#---this will give servers matching the criteria---#
+set $(grep -c -i $Input $ServerList)
+declare ServerCount=$1
+
+# go through $ServerList and match the hostname(s) to IP and start rdesktop
+for (( i = 1; i &lt;= $ServerCount; i++ ))
+
+do
+  set $(grep -m $i $Input $ServerList | awk -v i=&#34;$i&#34; &#39;NR == i {print $1}&#39;) #the host name
+  declare ServerName=$1
+
+set $(grep -m $i $Input $ServerList |  awk -v i=&#34;$i&#34; &#39;NR == i {print $2}&#39;)
+  declare RemoteServer=$1 #set the IP address from the above statement
+
+rdesktop -g $Resolution -r disk:$SharedDiskName=$LocalSharedDisk -u &#34;$UserName&#34; -0 -T $ServerName -N $RemoteServer &amp;
+
+done</code></pre></div>
+
+<p>That took care of launching the remote session but I still needed a way to not have to remember all the IP&rsquo;s of the various servers.  In MRemote there is a setting that allows you to pull the server list from a SQL table and save it to an XML file.  For those with access to this feature you can take the XML file and run it through the next small script to produce a two column list from which to launch remote.sh.  Normally it is not recommended to parse XML with Sed/Awk but for simple, well-formed, static documents(rare) it can be much simpler then using python or perl.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">#! /bin/bash
+#
+# MRConversion.sh
+# This file takes the output xml file from mremote and strips out the hostname
+# and IP and creates a two-column list in a text file.This file is then read by
+# remote.sh which matches the hostname to the IP and launches rdesktop with a specific set of options.
+# This is written in bash in OSX 10.7 but has been tested in Slackware Linux and works fine.
+# The latest development version of this can be found here github.com/mattyjones/remote
+#
+#
+# Usage:
+#
+# 1) Copy and paste the contents of this into a text editor and save it as MRConversion.sh
+# 2) chmod +x MRConversion.sh
+# 3) MRConversion.sh
+#
+#
+#matt jones
+#updated 11/28/11
+#copyright GPL v2
+
+declare temp=&#34;temp.txt&#34; #temp file, nothing special
+declare ServerList=&#34;ServerList.txt&#34; #the name of the file to be created
+
+create_list()
+  { #this is if the file dosen&#39;t exist at all
+  echo &#34;Please enter the full path of the mremote XML file&#34;
+  read InputFile
+
+  # use &#34; as a field seperator and print the second and eighteenth column the send it
+  # to sed to chop off the extra lines and save it to a temp file
+  awk  $temp
+
+  stat -c %y $InputFile &gt;&gt; $temp #get the creation date of input file and append it to temp file
+
+  sed &#39;s/\(.*\)/\L\1/&#39; $temp &gt; $ServerList #convert everything to lowercase for ease of use
+  rm $temp #delete the temp file
+
+  }
+
+update_list()
+  { #this runs if a file is detected
+  echo &#34;Do you want to update the server list? (yes/no)&#34;
+  read Ans
+  if [ &#34;$Ans&#34; = &#34;yes&#34; ]
+    then
+      echo &#34;Please enter the full path of the mremote XML file&#34;
+      read InputFile
+      # use &#34;as a field seperator and print the second and eighteenth column the send it
+      # to sed to chop off the extra lines and save it to a temp file
+      awk  $temp
+      stat -c %y $InputFile &gt;&gt; $temp #get the creation date and append it to the temp file
+      set $(sed -n &#39;$p&#39; $temp) #get the last line of the temp file and set it to Date
+      declare Date=&#34;$1&#34;
+
+      # Now compare the input file date in the temp file to the date of the input file in the
+      # current server list.  If the are the same then the temp file is deleted, the they are
+      # different then the temp file is set to all lowercase for ease of use and set to the
+      # ServerList variable name.
+
+      if grep $Date $ServerList &amp;&gt; /dev/null #redirect all output to the trash
+        echo &#34;The server list is already up to date&#34;
+        rm $temp
+
+      else sed &#39;s/\(.*\)/\L\1/&#39; $temp &gt; $ServerList #convert everything to lowercase
+        rm $temp
+      fi
+
+  elif [ &#34;$Ans&#34; = &#34;no&#34; ]
+    then echo #add another function to run here
+
+  else update_list #restart the process if anything else is given
+  fi
+  }
+
+#test to see if the file is already present, if so then check the timestamp
+if [ ! -f $ServerList ]
+  then
+    create_list #create a new file
+else
+  update_list #create a new file/check the current file
+
+fi</code></pre></div>
+
+<p>The next step would be to have multiple servers open up within the same window but in multiple tabs like they do in MRemote , I rarely have more than one or two servers open at a time so this is not crucial to me but could come in handy if you needed to make changes across the board to a handful of servers of the same type, ie. AD, DNS, etc.  The latest version of these can be found on my <a href="https://github.com/mattyjones" target="_blank">github</a>.</p>
+
+    </div>
+
+  </article>
+
+  <nav>
+  <ul class="pager">
+    
+
+    
+    <li class="next"><a href="http://caffeinatedengineering.io/post/windows-with-bsd/">Administering Windows Servers with FreeBSD <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+  
+
+
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2014-2018 Matt Jones &middot; 
+
+      
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+  </body>
+</html>
+

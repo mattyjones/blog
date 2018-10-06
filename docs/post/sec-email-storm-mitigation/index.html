@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.49" />
+  <meta name="author" content="Matt Jones">
+  <meta name="description" content="Open Source Infrastructure Hacker">
+
+  <link rel="stylesheet" href="/css/highlight.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  <link rel="stylesheet" href="http://caffeinatedengineering.iocss/override.css">
+  
+
+  <link rel="alternate" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+  <link rel="feed" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://caffeinatedengineering.io/post/sec-email-storm-mitigation/">
+
+  
+
+  <title>Monitoring Email Storm Mitigation | Caffeinated Engineering</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Caffeinated Engineering</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="nav-item">
+          <a href="/#about">
+            Home
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#posts">
+            Posts
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#projects">
+            Projects
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#talks">
+            Talks
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#teaching">
+            Coaching
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+    
+
+    <h1 itemprop="name">Monitoring Email Storm Mitigation</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-05-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Wed, May 7, 2014
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/sec">SEC</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/perl">perl&#34;</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/icinga">Icinga</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/monitoring">monitoring</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fsec-email-storm-mitigation%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Monitoring%20Email%20Storm%20Mitigation&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fsec-email-storm-mitigation%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fsec-email-storm-mitigation%2f&amp;title=Monitoring%20Email%20Storm%20Mitigation"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fsec-email-storm-mitigation%2f&amp;title=Monitoring%20Email%20Storm%20Mitigation"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Monitoring%20Email%20Storm%20Mitigation&amp;body=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fsec-email-storm-mitigation%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <p>No one likes to get flooded with email, most times its just annoying, but it can also mask a real problem.  If in those 2000 emails is a single email saying the database was just corrupted, you really don&rsquo;t want to miss it.  There are several tools and ways to control email, but unfortunately most MTA&rsquo;s don&rsquo;t have a way to set a threshold over time variable.  There is no way to say if N emails go out in N minutes stop sending email.</p>
+
+<p>This solution is just one of many and focuses mostly on Nagios and Icinga.  Using <a href="http://simple-evcorr.sourceforge.net/" target="_blank">Simple Event Coordinatorr</a> and the following rule set you can stop an email storm before it gets out of control.  Installing SEC is very simple, most distributions already have it in there repos or you can install it from source, it is a single perl script and man page.  SEC has also been known to work on Windows and OSX as well, I am currently running it on Cent6.4 and Slackware 14.1.</p>
+
+<p>To get started download the latest version of the rule set from Github <a href="https://gist.github.com/mattyjones/d68c7768f0e102ac76dd" target="_blank">here</a> then launch sec with the following command</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">sec -conf=email_throttle.conf -input=/path/to/monitoring/log/file</code></pre></div>
+
+<p>You could also use the &lsquo;-detach&rsquo; switch to make it run as a daemon.</p>
+
+<p>The rule starts by parsing the icinga.log for all notifications, if greater than 25 get sent out over a sliding 60s period the action takes place.  The initial action is to send an email notification out, create a context, then stop sendmail and wait 30s.  It will then open up a second input stream, in this case maillog, you need to start tail with &lsquo;-n 0&rsquo; or else it will trip instantly.</p>
+
+<p>The second rule parses the maillog to make sure email has indeed been stopped, it looks for a dsn, Delivery Status Notification, of any type to be set out, if it sees one then the second action takes place.  At this point monitoring is stopped on the machine, and a second email is sent out (if possible). Another context is created and we sleep for 30s more.  At this point the final rule sees the context it is looking for has been created and if it sees any more mail it will shutdown the server.</p>
+
+<p>I am well aware of how shutting down a server is a BAD idea, but without manual intervention and troubleshooting this is the only way to be absolute.  The third rule could always be removed and the window increased to give the technician time to look at the issue first-hand but if that won&rsquo;t be the case, or access to the machine is difficult this last rule will at least stop the follow of email without question.  You could also modify it to create a dump, log some data, etc as well before it powers off.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">type=SingleWithThreshold
+ptype=RegExp
+pattern=dsn=(\d+)\.(\d+)\.(\d+)
+context=maillog_tripped
+desc=$0
+action=shellcmd shutdown -h now 
+window=10
+thresh=2
+
+type=SingleWithThreshold
+ptype=RegExp
+pattern=dsn=(\d+)\.(\d+)\.(\d+)
+context=icingalog_tripped
+desc=$0
+action=pipe &#39;The email threshold was tripped at %t /n Stopping the monitoring services&#39; /bin/mail -s &#34;Email Storm Alert&#34; %e ;  \
+       create mail_tripped_context ; \
+       shellcmd /sbin/service ido2db stop
+       shellcmd /sbin/service icinga stop
+       shellcmd /bin/sleep 30
+window=10
+thresh=2
+
+type=SingleWithThreshold
+ptype=RegExp
+pattern=NOTIFICATION
+desc=$0
+action=eval %e {&#39;email_address&#39;} ;\
+       pipe &#39;The email threshold was tripped at %t /n Stopping the sendmil service&#39; /bin/mail -s &#34;Email Storm Alert&#34; %e ;  \
+       create icingalog_tripped ; \
+       shellcmd /sbin/service sendmail stop ; \
+       shellcmd /bin/sleep 30 ; \
+       spawn /usr/bin/tail -n 0 -f /var/log/maillog ; \
+window=60
+thresh=25</code></pre></div>
+
+    </div>
+
+  </article>
+
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://caffeinatedengineering.io/post/ssh-script/"><span
+      aria-hidden="true">&larr;</span> Execute Python Commands Over SSH</a></li>
+    
+
+    
+    <li class="next"><a href="http://caffeinatedengineering.io/post/notebookops/">NotebookOps or Another Reason Word Processors Are Evil <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+  
+
+
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2014-2018 Matt Jones &middot; 
+
+      
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+  </body>
+</html>
+

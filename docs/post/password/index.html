@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.49" />
+  <meta name="author" content="Matt Jones">
+  <meta name="description" content="Open Source Infrastructure Hacker">
+
+  <link rel="stylesheet" href="/css/highlight.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  <link rel="stylesheet" href="http://caffeinatedengineering.iocss/override.css">
+  
+
+  <link rel="alternate" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+  <link rel="feed" href="http://caffeinatedengineering.io/index.xml" type="application/rss+xml" title="Caffeinated Engineering">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://caffeinatedengineering.io/post/password/">
+
+  
+
+  <title>The Plaintext Truth About Password Storage Vulnerabilties | Caffeinated Engineering</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Caffeinated Engineering</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="nav-item">
+          <a href="/#about">
+            Home
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#posts">
+            Posts
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#projects">
+            Projects
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#talks">
+            Talks
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#teaching">
+            Coaching
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="/#contact">
+            Contact
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+    
+
+    <h1 itemprop="name">The Plaintext Truth About Password Storage Vulnerabilties</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2013-05-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sun, May 5, 2013
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/python">python</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/scrypt">scrypt</a
+    >, 
+    
+    <a class="article-tag-link" href="http://caffeinatedengineering.iotags/bcrypt">bcrypt</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fpassword%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=The%20Plaintext%20Truth%20About%20Password%20Storage%20Vulnerabilties&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fpassword%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fpassword%2f&amp;title=The%20Plaintext%20Truth%20About%20Password%20Storage%20Vulnerabilties"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fpassword%2f&amp;title=The%20Plaintext%20Truth%20About%20Password%20Storage%20Vulnerabilties"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=The%20Plaintext%20Truth%20About%20Password%20Storage%20Vulnerabilties&amp;body=http%3a%2f%2fcaffeinatedengineering.io%2fpost%2fpassword%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>It seems every few months a major site has their user database compromised one way or another. Gwaker, LinkedIn, and last.fm among others have been attacked, having their user&rsquo;s login credentials and other data posted online for the world to see. How this happened is an after thought, with near certainty I can say that any information stored on a computer connected to a network will at some point be compromised. This is just the way of life for security professionals, we need to defend against that using proper security protocols, secure coding practices, and constant vigilance, but what happens in the aftermath of a breach? An attacker has managed to download the entire database from your website, all those annoying captcha&rsquo;s, time-delayed logins, and the fancy two-factor authentication are no good now, it is just your data and an attacker that has time and resources on their side, or do they.</p>
+
+<p>With any luck you have sufficient protections in place that will buy you at least some time with which to react to the break-in. The obvious goal would be to prevent the attacker from decrypting any of the credentials in the database, baring that your security measures will hopefully buy you enough time to notify customers of the breach, take precautions to contain the damage, and implement new measures to prevent this in the future. So what security methods should you be using to keep those login credentials safe and why is it such a big deal) so you should be fine, right? Yes&hellip;no&hellip;depends, there is no easy answer to this so lets start with what a hash actually is.</p>
+
+<h2 id="the-hash">The Hash</h2>
+
+<p>In its most basic form a hash, also called a digest, is a long string of hex characters output from a cryptographic hashing algorithm such as MD5 or SHA-1.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">hashlib</span>
+
+password = <span style="color:#cd5555">&#34;mypassword&#34;</span>
+
+<span style="color:#8b008b;font-weight:bold">def</span> <span style="color:#008b45">MakeHash</span>(x):
+  h = hashlib.sha1(x)
+  <span style="color:#8b008b;font-weight:bold">return</span> h.hexdigest()
+
+d = MakeHash(password)
+
+<span style="color:#8b008b;font-weight:bold">print</span> d
+
+~<span style="color:#a61717;background-color:#e3d2d2">$</span> <span style="color:#b452cd">91</span>dfd9ddb4198affc5c194cd8ce6d338fde470e2</code></pre></div>
+
+<p>This is not meant to be implemented but merely for an example.  You could run this yourself by copying it into an editor, saving, and launching it with a python version greater than 2.7.  You can see how quickly it executes.  This is the point with SHA-1 and MD5, they are designed, not to store passwords, but to verify the integrity of a file.  Which brings us to an important lesson, the algorithm should work at its best when used on the hardware it was designed for but receive no gain or work poorly in any other environment.  Both SHA-1 and MD5 work great on commodity hardware and if an attacker were to build a machine for the sole purpose of cracking passwords they would be able to wreak havoc on keyspaces up to 6 characters without even breaking a sweat.</p>
+
+<p>Time for a little math lesson.  A typical password may contain 26 letters and 10 numbers which when we account for lowercase and uppercase gives use a total character set of 62.  We use an exponent to represent the size of the key space, in this case 6 which gives us a total of 5 billion possible hashes.  On a typical system it would take about an hour and a half to brute-force the entire keyspace, on a purpose-built machine it will take only a few minutes, if that.</p>
+
+<p><a href="http://ob-security.info/?p=546" target="_blank">Project Erebus</a> v2.5 by d3ad0ne, is a $12000 beast, the heart of which is eight AMD Radeon HD7970 GPU cards. Running version 0.10 of oclHashcat-lite, it needed only 12 hours to brute force the entire keyspace for any eight-character password containing upper-case and lower-case letters, digits or symbols. Doing the math that is 96 characters with an exponent of 8, which figures out to 7.2 quadrillion hashes. Keep in mind that this was for the entire keyspace, the vast majority of passwords likely fell within the first 2 hours. This is what your database could be facing and with systems like this being created it won&rsquo;t take long for it to crack under pressure.</p>
+
+<p>Going to larger more complex passwords is not the answer, this will only work until the next advancement in hardware comes along at best, at worst your users will simply type the same word over and over or fill the keyspace up with 0-N numbers. This is just as bad and can actually be broken eaiser using mask attacks or my favorite, hybrid attacks.  I will go into detail in another post, for now just know that systems like this are out there and more common than you think.  The solution, if you can call it that is to start taking password security seriously, starting with throwing a little salt at the attacker, and maybe some pepper as well.</p>
+
+<h2 id="the-pot-of-gold-at-the-end-of-the-rainbow">The Pot Of Gold At The End Of The Rainbow</h2>
+
+<p>When people talk about pre-compiled tables used to crack passwords they are generally referring to two types, the simple two column lookup tables and the much more common rainbow table.  The simple tables are just what they sound like, a hash calculated using a specific algorithm on one side and the cleartext on the other side.  When using these tables the attacker is freed from having to do any computation at all.  They merely search and compare the hashes, thus common passwords such as password1 fall instantly.  When combined with other attack methods such as a hybrid attack, which involves rules that alter the tables in common ways, it becomes very simple and fast to pull out many of the most common passwords as multiple people may have used the same password but the attacker only has to search once.  This fact alone makes tables very cost-effective from a time-cost standpoint.</p>
+
+<p>While these tables work well for shorter passwords, when the keyspace grows they become far to large.  Rainbow tables were created to help alleviate some of the unwieldiness.  They use a type of hash chain to cut down on what the table has to store.  These only work up to a given keyspace as well and really came into widespread use as RAM prices dropped, allowing attackers to store much of the table in active memory.  Once the key space gets to about nine these become too large as well.  This is vastly simplifying the ideas and math behind tables but it gives you an idea about what they are and how they function in a broad sense.  I will go into much greater detail in a later article but for most purposes due to the advances in GPU and FPGA hardware based attacks tables are not time-cost effective anymore except under very specific conditions involving the keyspace and algorithm the attacker is working against.</p>
+
+<h2 id="season-it-with-some-salt-and-pepper-or-the-end-of-the-rainbow">Season It With Some Salt And Pepper or The End Of The Rainbow</h2>
+
+<p>People love to talk about salting passwords and making sure to use a good salt but what do they really mean? A salt is nothing more than a string that is added to the password before it is hashed, generally at the beginning but you could put it at the end it makes no difference as long as you are consistent. There is really nothing complex about it, the main reason to salt the password is to prevent attacks with pre-compiled tables, including rainbow tables, which has the added result of preventing attack cost sharing.  As tables became more common in the early and mid 2000&rsquo;s salting the password became a hard requirement.</p>
+
+<p>The premise behind a salt is that even a slight change in the password will alter the hash in a major way. This is what is known as the avalanche effect, producing digests that are very different even when the input is only slightly altered, no longer will password1 be hashed to the same value, thus creating more work for the attacker.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">os</span>, <span style="color:#008b45;text-decoration:underline">hashlib</span>, <span style="color:#008b45;text-decoration:underline">base64</span>
+
+password = <span style="color:#cd5555">&#34;mypassword&#34;</span>
+salt = base64.b64encode(os.urandom(<span style="color:#b452cd">64</span>))
+
+<span style="color:#8b008b;font-weight:bold">def</span> <span style="color:#008b45">MakeSaltedHash</span>(p,s):
+  h = hashlib.sha1(s + p)
+  <span style="color:#8b008b;font-weight:bold">return</span> h.hexdigest()
+
+d = MakeSaltedHash(password, salt)
+
+<span style="color:#8b008b;font-weight:bold">print</span> d
+
+~<span style="color:#a61717;background-color:#e3d2d2">$</span> b6bc00f55aad0961ed0d7bcc1262dba9ab28f00b</code></pre></div>
+
+<p>This will now salt the password with a large enough string to prevent what is known as salt collision, when two password hashes use the same salt. This is a rather excessively large salt but some password files can have over 100,000 entries so this may be necessary to counter what is known as the <a href="http://en.wikipedia.org/wiki/Birthday_problem" target="_blank">birthday problem</a>. A more reasonable value for the salt would be 32bits which would require nearly 4 billion separate tables and roughly 50,000 outputs before you encountered a 25% collision rate. In the above example with 100,000 entries and a 32bit salt the probability of a random collision would be about 70%. Please do not do silly things like hash the username, UID or some other known value as a salt either.  This is a waste and opens the hash to various attack vectors, to be effective the salt needs to be a cryptographically random string and yes there is a difference between a pseudo-random string and a cryptographically random string. There is no such thing as a truly random number but there are viable ways to come close. According to the official Python <a href="http://docs.python.org/dev/library/os.html?highlight=urandom#os.urandom" target="_blank">documentation</a> os.urandom is suitable for this type of application but to be certain other references should also be sought out.</p>
+
+<p>The salt is stored with the password in the format of $x$salt$hash where x is the algorithm used, which contrary to initial perception, does not present any more of a risk as it is not meant to be secret, but merely to make the decryption process more time expensive for the attacker.  For those that want more protection of this sort, we have pepper.  Pepper is nothing more than a string stored outside the database, generally in source code, that is also used in the hashing process.  It must be noted though that if the attacker gains local access to the server then this method in null.  This is only a feasible method if the attacker only manages to dump the database and even then the jury is still out whether this is really worth the extra effort.  The other concern is that when applying pepper, by its very nature, you now have applied a &ldquo;key&rdquo; and as such that key must be protected and you are also starting to get into HMAC, hash message authentication code.</p>
+
+<h2 id="stretch-those-legs-for-the-long-road-ahead">Stretch Those Legs For The Long Road Ahead</h2>
+
+<p>Salting is only half the battle, as stated before you have to make the attack cost more when run in non-native environments.  This involves a process known as key streching, where you hash the salt and password, rinse, repeat.  There are several ways to do this, I did it this way for the sake of simplicity.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">os</span>, <span style="color:#008b45;text-decoration:underline">hashlib</span>, <span style="color:#008b45;text-decoration:underline">base64</span>
+
+password = <span style="color:#cd5555">&#34;mypassword&#34;</span>
+salt = base64.b64encode(os.urandom(<span style="color:#b452cd">64</span>))
+iterations = <span style="color:#cd5555">&#34;10000&#34;</span>
+
+<span style="color:#8b008b;font-weight:bold">def</span> <span style="color:#008b45">MakeSaltedHash</span>(p, s, i):
+  h = haslib.sha1(s + p)
+  <span style="color:#8b008b;font-weight:bold">while</span> iterations &gt; <span style="color:#b452cd">0</span>:
+    h = hashlib.sha1(h.hexdigest() + p + s)
+    iterations = iterations - <span style="color:#b452cd">1</span>
+  <span style="color:#8b008b;font-weight:bold">return</span> h.hexdigest()
+
+d = MakeSaltedHash(password, salt, iterations)
+
+~<span style="color:#228b22"># 10adf3f3ec724dd4c3acf9aca51c29e4bcb35d04</span></code></pre></div>
+
+<p>This will now perform the hashing process 10,000 times which makes it much more difficult to implement effectively on GPU&rsquo;s.  This is not a perfect solution and I stress again should not be implemented as written because there is a attack vector known as a  transferable state attack which can reduce the computational time necessary by 80% when using SHA-256.  The correct way to implement this would be to use Adaptive Key Derivation Functions such as  bcrypt, which uses a work factor and a block cipher called blowfish which along with the work factor means it is slow as hell in relative terms.</p>
+
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#8b008b;font-weight:bold">import</span> <span style="color:#008b45;text-decoration:underline">bcrypt</span>
+
+password = <span style="color:#cd5555">&#34;mypassword&#34;</span>
+
+<span style="color:#8b008b;font-weight:bold">def</span> <span style="color:#008b45">MakeBcryptHash</span>(p):
+  salt = bcrypt.gensalt()
+  h = bcrypt.hashpw(salt, p)
+<span style="color:#8b008b;font-weight:bold">return</span> h
+
+d = MakeBcryptHash(password)
+
+~<span style="color:#228b22"># 708fdc2140b61fbc2100c2c759f76fbce207b58f9aae80db850fc7ab266e1a7e0dc5361c6a47d95f663efae78e0702b41423f2bd355445181dd6438ae846f7fb</span></code></pre></div>
+
+<p>So we have successfully beaten tables with salt and countered GPU accelerated systems with key stretching, all that is left are the FPGA&rsquo;s.  To counter them we need to move to memory-bound cryptographic functions.</p>
+
+<h2 id="we-need-more-memory">We Need More Memory</h2>
+
+<p>The other major hardware based attack comes from FPGAs, Field Programmable Logic Arrays.  These work similar to GPU&rsquo;s in that they can do many simple calculations very quickly but unlike GPU&rsquo;s they have dedicated on-board memory.  The only way to counter them is to use memory-bound functions.  These are math functions designed to use lots of memory in non-contiguous blocks.  While FPGA&rsquo;s have on-board memory they are not capable of handling the requirements of these functions whose computational time is dependent upon access to often large amounts of memory.  One choice that is gaining in popularity is scrypt.  While it is not in widespread use due to is relatively untested nature it is starting to slowly gain traction. It contains a work factor like bcrypt but also a memory factor that allows the administrator to dictate memory usage. This combined with other features do the most complete job of defeating many of the available attack vectors. The old saying still applies though, &ldquo;Garbage in, garbage out&rdquo;. If the tools are not used properly and the users don&rsquo;t at least attempt to pick a secure password no amount of math mumbo jumbo will protect your data.</p>
+
+    </div>
+
+  </article>
+
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://caffeinatedengineering.io/post/latex-with-git/"><span
+      aria-hidden="true">&larr;</span> LaTeX and Git in an Academic Environment</a></li>
+    
+
+    
+    <li class="next"><a href="http://caffeinatedengineering.io/post/arch-cheatsheet/">Arch Linux Cheatsheet <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+  
+
+
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2014-2018 Matt Jones &middot; 
+
+      
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+  </body>
+</html>
+

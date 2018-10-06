@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notebookops on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/tags/notebookops/</link>
+    <description>Recent content in Notebookops on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Sun, 21 Feb 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/tags/notebookops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NotebookOps or Another Reason Word Processors Are Evil</title>
+      <link>http://caffeinatedengineering.io/post/notebookops/</link>
+      <pubDate>Sun, 21 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/post/notebookops/</guid>
+      <description>Hardware Stack Until recently I was unaware of anything resembling NotebookOps. Apparently I am not alone in being obsessively focused on the type, organization, and presentation of my notebook. Right down to the interface I chose to regularly interact with it.
+I have used Mead Composition notebooks and Pilot Precise pens for nearly twenty years. They had been working fine all through high school and beyond, I just never felt the need to change, basically I was lazy.</description>
+    </item>
+    
+  </channel>
+</rss>

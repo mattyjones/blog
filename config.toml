@@ -1,9 +1,10 @@
 baseurl = "http://caffeinatedengineering.io"
 title = "Caffeinated Engineering"
-copyright = "&copy; 2014-2016 Matt Jones"
+copyright = "&copy; 2014-2018 Matt Jones"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
+publishDir = "docs"
 
 PygmentsCodeFences = true
 PygmentsStyle = "perldoc"

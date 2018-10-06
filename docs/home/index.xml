@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Caffeinated Engineering</title>
+    <link>http://caffeinatedengineering.io/home/</link>
+    <description>Recent content in Homes on Caffeinated Engineering</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2014-2018 Matt Jones</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://caffeinatedengineering.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://caffeinatedengineering.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/home/about/</guid>
+      <description>Biography I am an infrastructure and operational tool developer who believes in the Unix philosophy, writing tests first, and that well written code can be its own documentation. I constantly learn new languages and methods ensuring I always use the best tool or design for a task given currently available information. A codebase, including infrastructure, is never absolute, it’s a living entity that needs to be nurtured and cared for, evaluated at regular intervals and grown and evolved as its maintainers grow and evolve.</description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://caffeinatedengineering.io/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://caffeinatedengineering.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>http://caffeinatedengineering.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coaching</title>
+      <link>http://caffeinatedengineering.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/home/teaching/</guid>
+      <description>I enjoy coaching and teaching middle and high school children various topics about engineering. Currently I am a volunteer coach of the following programs:
+ First Lego League, Norte Dame Academy Snap Circuits, Norte Dame Academy Intro to Open Source development using Python, Norte Dame Academy Summer Camp - Technology Week, Norte Dame Academy  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://caffeinatedengineering.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://caffeinatedengineering.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
