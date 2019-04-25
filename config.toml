@@ -27,7 +27,7 @@ defaultContentLanguageInSubdir = false
   role = "Open Source Infrastructure Hacker"
   # organization = "Salesforce"
   avatar = "me2.png"
-  email = "urlugal@gmail.com"
+  email = "urlugal@gmail.foo"
 
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
